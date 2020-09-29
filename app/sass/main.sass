@@ -2,64 +2,15 @@
 @import "libs"
 @import "vars"
 
-*
-	-webkit-box-sizing: border-box
-	-moz-box-sizing: border-box
-	box-sizing: border-box
-	&:before, &:after
-		-webkit-box-sizing: border-box
-		-moz-box-sizing: border-box
-		box-sizing: border-box
-
-*::-webkit-input-placeholder
-	color: #666
-	opacity: 1
-
-*:-moz-placeholder
-	color: #666
-	opacity: 1
-
-*::-moz-placeholder
-	color: #666
-	opacity: 1
-
-*:-ms-input-placeholder
-	color: #666
-	opacity: 1
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-	color: #666
-body input:required:valid,
-body textarea:required:valid
-	color: #666
-
-html, body
-	height: 100%
+@import "vars"
 
 body
 	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: 1.65
+	line-height: 1.6
 	font-family: $default-font
 	overflow-x: hidden
-	color: black
-
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
-
-.text-center
-	text-align: center
-
-::selection
-	// background-color: 
-	color: #fff
-
-
+	background-color: $grey
 
 @import "blocks/header"
-
-@import "media" // Всегда в конце
