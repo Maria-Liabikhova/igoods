@@ -32,21 +32,21 @@
 <body class="body">
 	<header class="header">
 		<section class="header__container">
-			<div class="header-top">
+			<div class="header__top">
 				<img class="header__img" src="img/label.jpg" alt="логотип">
-				<div class="header-top__list">
+				<div class="header__list">
 					<a href="#" class="link link--top">Санкт-Петербург и ЛО</a>
 					<a href="#" class="link link--top">Список магазинов</a>
 					<a href="#" class="link link--top">Как это работает</a>
 					<a href="#" class="link link--top">Доставка для бизнеса</a>
 					<a href="#" class="link link--top">Войти</a>
-					<a href="#" class="link link--top"><i class="fa fa-phone header-top__icon"></i></a>
-					<a href="#" class="link link--button  link--small">Заказать доставку</a>
+					<a href="#" class="link link--top"><i class="fa fa-phone header__icon"></i></a>
+					<a href="#" class="link link--button link--small">Заказать доставку</a>
 				</div>
 			</div>
 			<section class="profits">
 				<div class="profits__carousel owl-carousel">
-					<div class="profits profits--home" hidden>
+					<div class="profits__wrap profits--home">
 						<div class="profits__discription">
 							<h2 class="profits__title">доставка<br>продуктов<br>на дом</h2>
 							<p class="profits__text">Продукты из самых популярных<br>гипермаркетов Санкт-Петербурга</p>
@@ -57,7 +57,7 @@
 						</div>
 						<img class="profits__img" src="img/bgi-delivery.png" alt="картинка акционные товары Ленты">
 					</div>
-					<div class="profits profits--catalog">
+					<div class="profits__wrap profits--catalog" style="background-image: url(img/bgi-catalog.png)">
 						<div class="profits__discription">
 							<h2 class="profits__title">самый<br>актуальный<br>каталог</h2>
 							<p class="profits__text">Ежедневно мы выгружаем актуальный каталог<br>товаров для каждого магазина</p>
@@ -66,7 +66,37 @@
 								<a href="#" class="link link--violet">Выбрать магазин</a>
 							</div>
 						</div>
-						<img class="profits__img profits__img--catalog" src="img/bgi-catalog.png" alt="картинка акционные товары Ленты">
+					</div>
+					<div class="profits__wrap profits--pack" style="background-image: url(img/bgi-pack.png)">
+						<div class="profits__discription">
+							<h2 class="profits__title profits__title--navy">Фасуем товар</h2>
+							<p class="profits__text profits__text--navy">Отдельно овощи, фрукты, хозтовары<br>и заморозка. Соблюдаем<br>температурный режим</p>
+							<div class="profits__link-wrap">
+								<a href="#" class="link link--button">Как это работает</a>
+								<a href="#" class="link link--violet">Заказать доставку</a>
+							</div>
+						</div>
+					</div>
+					<div class="profits__wrap profits--app" >
+						<div class="profits__discription">
+							<h2 class="profits__title profits__title--navy">Пиложение<br>IOS и Android</h2>
+							<p class="profits__text profits__text--navy">Скачайте приложение и заказывайте в любое<br>время и в любом месте</p>
+							<div class="profits__link-wrap">
+								<a href="#" class="link link--violet">Загрузите в App Stote</a>
+								<a href="#" class="link link--violet">Загрузите на Google play</a>
+							</div>
+						</div>
+						<img class="profits__img profits__img--phone" src="img/bg-app.png" alt="картинка акционные товары Ленты">
+					</div>
+					<div class="profits__wrap profits--office" style="background-image: url(img/bgi-office.png)">
+						<div class="profits__discription">
+							<h2 class="profits__title profits__title--navy">Доставляем даже<br>в офисы</h2>
+							<p class="profits__text profits__text--navy">Можем регулярно привозить кофе, чай,<br>	молоко, овощи и фрукты в офис.</p>
+							<div class="profits__link-wrap">
+								<a href="#" class="link link--button link--wide">Подробнее для бизнеса</a>
+								<a href="#" class="link link--violet">Выбрать магазин</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -84,7 +114,7 @@
 	
 	<main>
 		<!-- goods -->
-		<section class="goods" hidden>
+		<section class="goods">
 			<h1 class="goods__title">igooods — это 80 000 товаров</br>и  150 гипермаркетов по всей России</h1>
 			<ul class="goods__list">
 				<li class="goods__item"><a href="#" class="goods__link">Овощи и фрукты</a></li>
@@ -102,27 +132,27 @@
 		</section>
 		<!-- goods END -->
 		<!-- algorithm -->
-		<section class="banner banner--algorithm" hidden>
+		<section class="banner banner--algorithm" >
 			<h2 class="banner__title banner__title--algorithm">Как работает igooods</h2>
 			<ul class="banner__list">
 				<li class="banner__item">
-					<h6 class="banner__item--title">Вы заказываете продукты</h6>
-					<p class="banner__item--text">Выберите магазин и соберите корзину на сайте или в приложении. Цены как в гипермакете</p>
+					<h6 class="banner__title">Вы заказываете продукты</h6>
+					<p class="banner__text">Выберите магазин и соберите корзину на сайте или в приложении. Цены как в гипермакете</p>
 				</li>
 				<li class="banner__item">
-					<h6 class="banner__item--title">Мы покупаем всё по списку</h6>
-					<p class="banner__item--text">Персональный закупщик купит продукты и передаст курьеру. Если чего-то нет в наличии, согласует с вами замены</p>
+					<h6 class="banner__title">Мы покупаем всё по списку</h6>
+					<p class="banner__text">Персональный закупщик купит продукты и передаст курьеру. Если чего-то нет в наличии, согласует с вами замены</p>
 				</li>
 				<li class="banner__item">
-					<h6 class="banner__item--title">Доставляем за полтора часа</h6>
-					<p class="banner__item--text">Курьер приедет к вам в удобное время. Ближайшая доставка через 90 минут, оплата наличными или картой</p>
+					<h6 class="banner__title">Доставляем за полтора часа</h6>
+					<p class="banner__text">Курьер приедет к вам в удобное время. Ближайшая доставка через 90 минут, оплата наличными или картой</p>
 				</li>
 			</ul>
 			<a href="#" class="banner__link link-button">Заказать доставку от 199 ₽</a>
 		</section>
 		<!-- algorithm END -->
 		<!-- popular -->
-		<section class="banner banner--popular" hidden>
+		<section class="banner banner--popular" >
 			<h2 class="banner__title banner__title--popular">Как работает igooods</h2>
 			<div class="owl-carousel carousel-services"></div>
 		</section>

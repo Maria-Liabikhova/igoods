@@ -15,15 +15,17 @@
     justify-content: center
     border-radius: 30px
     font-size: 16px
-    &:hover
+    &:hover, &:active, &:visited, &:active
       color: $white
       background-color: lighten($violet, 10% )
+      cursor: pointer
   &--top
     color: $grey
     margin-right: 25px
     white-space: nowrap
-    &:hover
-      color: inherit
+    &:hover, &:active, &:visited
+      color: $grey
+      text-decoration: none
   &--violet
     color: darken($violet, 20%)
     margin-left: 20px
@@ -33,4 +35,6 @@
       color: $violet
   &--small
     font-size: 14px
+  &--wide
+    width: 230px
 // link-button END
