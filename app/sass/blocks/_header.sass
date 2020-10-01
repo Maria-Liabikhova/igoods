@@ -1,32 +1,48 @@
 // header
 .header
-  &__img
-    height: 60px
-    width: auto
-    margin-left: 65px
-  &__wrapper
+  max-width: 1440px
+  &__container
+    margin-top: 10px
     margin-left: auto
     margin-right: auto
     display: block
-    width: 100%
-    max-width: 1440px
-  &-top
-    display: flex
+    width: 1200px
     margin-left: auto
     margin-right: auto
-    margin-top: 20px
+    border: 2px dashed pink
+  &__img
+    height: 60px
+    width: auto
+    margin-left: -18px
+    margin-right: 45px
+  &-top
+    display: flex
+    align-items: center
+    margin-left: auto
+    margin-right: auto
     &__list
       display: flex
       font-size: 14px
-    &__item
-      list-style: none
-      margin-right: 20px
+      align-items: center
     &__link
       color: $grey
+      margin-right: 25px
+      white-space: nowrap
+      &--i
+        margin-right: 10px
+      &--btn
+        margin-right: -30px
       &:hover
         text-decoration: none
         color: inherit
-  // &__icon
-  //   height: 30px
-  //   width: 30px
+    &__icon
+      color: $dark-green
+      font-size: 25px
+      width: 50px
+      height: 50px
+      border-radius: 50%
+      background-color: $turquoise
+      display: flex
+      justify-content: center
+      align-items: center
 // header END
