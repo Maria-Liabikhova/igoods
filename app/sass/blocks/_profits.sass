@@ -1,35 +1,49 @@
 // profits
 .profits
   height: 480px
-  margin-top: 20px
+  margin-top: 10px
   position: relative
   height: 480px
   width: 100%
   border-radius: 15px
+  overflow: hidden
   &__discription
+    position: absolute
+    margin-left: 50px
     display: flex
     height: 100%
     flex-direction: column
     justify-content: space-between
     align-items: flex-start
-    // background-image: 100px
   &--home
     background-color: $turquoise
+  &--catalog
+    background-color: $light-blue
   &__link-wrap
+    display: flex
+    justify-content: center
     margin-top: auto
+    margin-bottom: 50px
   &__img
     height: 400px
     width: auto
     position: absolute
     right: -30px
     bottom: 50px
+    &--catalog
+      right: -50px
+      height: 480px
+      bottom: 0px
+      overflow: hidden
   &__title
     font-family: $tera
     text-transform: uppercase
     font-weight: bold
     font-size: 38px
-    letter-spacing: 0.7px
+    letter-spacing: .7px
     line-height: 50px
-
-    
+    margin-top: 50px
+  &__text
+    font-size: 20px
+    line-height: 34px
 // profits END

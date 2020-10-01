@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+<html lang="eng">
 
 <head>
 
@@ -34,31 +35,39 @@
 			<div class="header-top">
 				<img class="header__img" src="img/label.jpg" alt="логотип">
 				<div class="header-top__list">
-					<a href="#" class="header-top__link">Санкт-Петербург и ЛО</a>
-					<a href="#" class="header-top__link">Список магазинов</a>
-					<a href="#" class="header-top__link">Как это работает</a>
-					<a href="#" class="header-top__link">Доставка для бизнеса</a>
-					<a href="#" class="header-top__link">Войти</a>
-					<a href="#" class="header-top__link header-top__link--i"><i class="fa fa-phone header-top__icon"></i></a>
-					<a href="#" class=" header-top__link header-top__link--btn link-button">Заказать доставку</a>
+					<a href="#" class="link link--top">Санкт-Петербург и ЛО</a>
+					<a href="#" class="link link--top">Список магазинов</a>
+					<a href="#" class="link link--top">Как это работает</a>
+					<a href="#" class="link link--top">Доставка для бизнеса</a>
+					<a href="#" class="link link--top">Войти</a>
+					<a href="#" class="link link--top"><i class="fa fa-phone header-top__icon"></i></a>
+					<a href="#" class="link link--button  link--small">Заказать доставку</a>
 				</div>
 			</div>
 			<section class="profits">
 				<div class="profits__carousel owl-carousel">
-					<div class="profits profits--home">
+					<div class="profits profits--home" hidden>
 						<div class="profits__discription">
 							<h2 class="profits__title">доставка<br>продуктов<br>на дом</h2>
 							<p class="profits__text">Продукты из самых популярных<br>гипермаркетов Санкт-Петербурга</p>
 							<div class="profits__link-wrap">
-								<a href="#" class="link link--button">заказать доставку</a>
-								<a href="#" class="link">выбрать магазин</a>
+								<a href="#" class="link link--button">Заказать доставку</a>
+								<a href="#" class="link link--violet">Выбрать магазин</a>
 							</div>
 						</div>
 						<img class="profits__img" src="img/bgi-delivery.png" alt="картинка акционные товары Ленты">
 					</div>
-					<!-- <div class="profits__banner profits__banner--pack">1</div>
-					<div class="profits__banner profits__banner--ios">2</div>
-					<div class="profits__banner profits__banner--office">3</div> -->
+					<div class="profits profits--catalog">
+						<div class="profits__discription">
+							<h2 class="profits__title">самый<br>актуальный<br>каталог</h2>
+							<p class="profits__text">Ежедневно мы выгружаем актуальный каталог<br>товаров для каждого магазина</p>
+							<div class="profits__link-wrap">
+								<a href="#" class="link link--button">Смотреть каталог</a>
+								<a href="#" class="link link--violet">Выбрать магазин</a>
+							</div>
+						</div>
+						<img class="profits__img profits__img--catalog" src="img/bgi-catalog.png" alt="картинка акционные товары Ленты">
+					</div>
 				</div>
 			</section>
 			<section class="shops">
@@ -75,7 +84,7 @@
 	
 	<main>
 		<!-- goods -->
-		<section class="goods">
+		<section class="goods" hidden>
 			<h1 class="goods__title">igooods — это 80 000 товаров</br>и  150 гипермаркетов по всей России</h1>
 			<ul class="goods__list">
 				<li class="goods__item"><a href="#" class="goods__link">Овощи и фрукты</a></li>
@@ -93,7 +102,7 @@
 		</section>
 		<!-- goods END -->
 		<!-- algorithm -->
-		<section class="banner banner--algorithm">
+		<section class="banner banner--algorithm" hidden>
 			<h2 class="banner__title banner__title--algorithm">Как работает igooods</h2>
 			<ul class="banner__list">
 				<li class="banner__item">
@@ -113,7 +122,7 @@
 		</section>
 		<!-- algorithm END -->
 		<!-- popular -->
-		<section class="banner banner--popular">
+		<section class="banner banner--popular" hidden>
 			<h2 class="banner__title banner__title--popular">Как работает igooods</h2>
 			<div class="owl-carousel carousel-services"></div>
 		</section>

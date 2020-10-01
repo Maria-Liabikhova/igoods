@@ -1,0 +1,36 @@
+// link-button
+.link
+  transition: all .3s ease
+  &:hover, &:active, &:visited
+    text-decoration: none
+    transition: all .3s ease
+  &--button
+    height: 50px
+    width: 180px
+    background-color: $violet
+    color: $white
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 30px
+    font-size: 16px
+    &:hover
+      color: $white
+      background-color: lighten($violet, 10% )
+  &--top
+    color: $grey
+    margin-right: 25px
+    white-space: nowrap
+    &:hover
+      color: inherit
+  &--violet
+    color: darken($violet, 20%)
+    margin-left: 20px
+    justify-self: center
+    align-self: center
+    &:hover
+      color: $violet
+  &--small
+    font-size: 14px
+// link-button END
