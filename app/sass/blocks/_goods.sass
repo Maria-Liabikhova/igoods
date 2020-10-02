@@ -6,6 +6,8 @@
   display: flex
   justify-content: center
   align-items: center
+  &--blue
+    background-color: lighten($turquoise, 10%)
   &__img
     height: 64px
     width: 64px
@@ -19,11 +21,24 @@
       color: $white
       text-decoration: none
     &--button
+      white-space: nowrap
       width: 375px
       transition: all .3s ease
       align-self: center
+      text-align: center
       &:hover
         background-color: lighten($violet, 30%)
+  &__item
+    width: 33.3%
+    display: flex
+    justify-content: center
+    flex-direction: column
+    &--blue
+      width: calc(33.3% - 13px)
+      height: 308px
+      margin-right: 20px
+      &:last-child
+        margin-right: 0
   &__wrap
     max-width: 1060px
     display: flex
@@ -33,17 +48,48 @@
     width: 1060px
     height: 270px
     flex-wrap: wrap
+    &--blue
+      margin-bottom: 50px
   &__title
     color: $white
     font-size: 40px
     line-height: 50px
     margin-bottom: 50px
     text-align: center
+    &--small
+      font-size: 40px
+      color: $grey
+      margin-bottom: 5px
+    &--blue
+      color: $grey
+      font-size: 16px
+      margin-bottom: 5px
+      line-height: 30px
+      font-weight: 600
+  &__text
+    &--blue
+      color: $grey
+      text-align: center
   &__yellow
     background-color: $yellow
     color: $grey
     padding: 0 10px 10px 10px
-
-
-      
+  &__circle
+    transform: rotate(45deg)
+    height: 90px
+    width: 60px
+    border-radius: 50%
+    background-color: $salad
+    align-self: center
+    display: flex
+    justify-content: center
+    align-items: center
+    &--turquoise
+      background-color: $turquoise 
+    &--yellow
+      background-color: $yellow
+  &__icon
+    transform: rotate(-45deg)
+    color: $grey
+    font-size: 35px
 // goods END
