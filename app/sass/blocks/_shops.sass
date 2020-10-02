@@ -1,15 +1,19 @@
 // shops
 .shops
-  border: 1px solid red
   display: flex
   justify-content: space-between
   height: 106px
   align-items: center
   &__links
-    border: 1px solid blue
-  &__img
-    border: 1px solid green
-    height: 36px
+    border-right: 1px solid lighten($grey, 65% )
+    flex-grow: 1
+    display: flex
+    justify-content: center
+    &:last-child
+      border: none
+    &__img
+    height: 55px
+    // border: 1px solid green
 
     
 

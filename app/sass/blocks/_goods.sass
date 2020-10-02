@@ -1,0 +1,49 @@
+// goods
+.goods
+  height: 620px
+  width: 100%
+  background-color: $violet
+  display: flex
+  justify-content: center
+  align-items: center
+  &__img
+    height: 64px
+    width: 64px
+    margin-bottom: 10px
+  &__link
+    color: $white
+    font-weight: semibold
+    width: calc(100% / 5)
+    text-align: center
+    &:hover, &:active, &:focus
+      color: $white
+      text-decoration: none
+    &--button
+      width: 375px
+      transition: all .3s ease
+      align-self: center
+      &:hover
+        background-color: lighten($violet, 30%)
+  &__wrap
+    max-width: 1060px
+    display: flex
+    flex-direction: column
+  &__row
+    display: flex
+    width: 1060px
+    height: 270px
+    flex-wrap: wrap
+  &__title
+    color: $white
+    font-size: 40px
+    line-height: 50px
+    margin-bottom: 50px
+    text-align: center
+  &__yellow
+    background-color: $yellow
+    color: $grey
+    padding: 0 10px 10px 10px
+
+
+      
+// goods END
