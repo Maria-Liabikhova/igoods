@@ -1,0 +1,68 @@
+// popnow
+.popnow
+  text-align: center
+  width: 1310px
+  max-width: 1440px
+  padding: 70px 65px
+  margin-left: auto
+  margin-right: auto
+  overflow: hidden
+  &__carousel
+    display: flex
+  &__card
+    height: 380px
+    width: 250px
+    padding: 20px 24px  24px 24px
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+  &__img
+    &--prod
+      // border: 1px solid red
+      height: 160px
+      width: auto
+      margin-left: auto
+      margin-right: auto
+    &--shop
+  &__price
+    color: lighten($violet, 30%)
+    margin-bottom: 0
+    &--now
+      font-weight: bold
+      font-size: 22px
+      line-height: 25px
+    &--old
+      font-size: 14px
+      line-height: 16px
+      text-decoration: line-through
+      margin-left: -12px
+    &--grey
+      color: lighten($grey, 60%)
+      font-size: 16px
+  &__text
+    text-align: start
+    height: 44px
+    overflow: hidden
+    text-overflow: ellipsis
+    &--volume
+      color: lighten($grey, 60%)
+      height: auto
+      line-height: 15px
+  &__wrap
+    &--text
+      line-height: 22px
+      margin-bottom: 5px
+      font-size: 14px
+  &__link
+    color: darken($turquoise, 70%)
+    font-size: 14px
+    line-height: 20px
+    height: 40px
+    width: 100%
+    border-radius: 5px
+    background-color: $turquoise
+    align-items: center
+    justify-content: center
+    display: flex
+// popnow END
