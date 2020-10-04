@@ -11,7 +11,8 @@
   &--delivery
     background-color: $turquoise
     height: 431px
-
+    margin-bottom: 500px
+    justify-content: space-around
   &__img
     height: 64px
     width: 64px
@@ -19,6 +20,7 @@
     &--background
       height: 400px
       width: auto
+      margin-left: 70px
   &__link
     color: $white
     font-weight: semibold
@@ -50,6 +52,10 @@
     max-width: 1060px
     display: flex
     flex-direction: column
+    &--forinput
+      flex-direction: row
+    &--warning
+      height: 84px
   &__row
     display: flex
     width: 1060px
@@ -74,10 +80,16 @@
       margin-bottom: 5px
       line-height: 30px
       font-weight: 600
+    &--delivery
+      text-align: start
+      margin-bottom: 30px
   &__text
     &--blue
       color: $grey
       text-align: center
+    &--warning
+      display: none
+      color: crimson
   &__yellow
     background-color: $yellow
     color: $grey
@@ -100,4 +112,33 @@
     transform: rotate(-45deg)
     color: $grey
     font-size: 35px
+  &__input
+    width: 100%
+    border: none
+    padding: 12px
+    font-size: 16px
+    color: $grey
+    border-radius: 4px
+    background-color: lighten($turquoise, 10%)
+    &:hover, &:focus, &:active
+      outline: none
+  &__button
+    background-color: $white
+    transition: all .3s ease
+    width: 177px
+    margin-left: 10px
+    flex-shrink: 0
+    font-size: 14px
+    border: none
+    border-radius: 4px
+    &:hover, &:focus, &:active
+      background-color: lighten($turquoise, 10%)
+      outline: none
+  &__shops
+    display: flex
+    justify-content: space-between
+  &__coll
+    margin-right: 70px
+    height: 258px
+    width: 701px
 // goods END
