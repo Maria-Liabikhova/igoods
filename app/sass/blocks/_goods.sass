@@ -11,8 +11,9 @@
   &--delivery
     background-color: $turquoise
     height: 431px
-    margin-bottom: 500px
     justify-content: space-around
+  &--tryit
+    background-color: $white
   &__img
     height: 64px
     width: 64px
@@ -21,6 +22,10 @@
       height: 400px
       width: auto
       margin-left: 70px
+    &--tryit
+      height: 470px
+      margin-bottom: 0
+      margin-top: auto
   &__link
     color: $white
     font-weight: semibold
@@ -84,12 +89,20 @@
       text-align: start
       margin-bottom: 30px
   &__text
+    font-weight: regular
     &--blue
       color: $grey
       text-align: center
     &--warning
       display: none
       color: crimson
+    &--tryit
+      font-size: 18px
+      line-height: 30px
+    &--small
+      font-size: 16px
+      margin-top: 30px
+      margin-bottom: 20px
   &__yellow
     background-color: $yellow
     color: $grey
@@ -122,6 +135,9 @@
     background-color: lighten($turquoise, 10%)
     &:hover, &:focus, &:active
       outline: none
+    &--tryit
+      width: 187px
+      height: 50px
   &__button
     background-color: $white
     transition: all .3s ease
@@ -134,11 +150,27 @@
     &:hover, &:focus, &:active
       background-color: lighten($turquoise, 10%)
       outline: none
+    &--tryit
+      background-color: $turquoise
+      &:hover, &:focus, &:active
+        background-color: darken($turquoise, 7%)
+
   &__shops
     display: flex
     justify-content: space-between
+    height: 30px
+    // width: 100%
   &__coll
     margin-right: 70px
     height: 258px
     width: 701px
+    margin-bottom: 50px
+    &--tryit
+      width: 565px
+      height: auto
+
 // goods END
+
+  187 
+    50
+  
