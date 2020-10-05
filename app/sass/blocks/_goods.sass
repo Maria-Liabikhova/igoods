@@ -15,7 +15,10 @@
   &--tryit
     background-color: $white
   &--howdeliver
+    height: 580px
     background-color: $white
+    padding: 70px 90px 90px 90px
+    background-color: $light-blue
   &__img
     height: 64px
     width: 64px
@@ -89,7 +92,8 @@
       font-weight: 600
     &--delivery
       text-align: start
-      margin-bottom: 30px
+      margin-bottom: 18px
+      margin-top: 40px
   &__text
     font-weight: regular
     &--blue
@@ -156,12 +160,19 @@
       background-color: $turquoise
       &:hover, &:focus, &:active
         background-color: darken($turquoise, 7%)
-
+    &--howdeliver
+      height: 48px
+      width: 100%
+      background-color: $white
+      font-size: 16px
+      margin: 0
+      padding: 0
+      &:hover
+        background-color: lighten($turquoise, 3%)
   &__shops
     display: flex
     justify-content: space-between
     height: 30px
-    // width: 100%
   &__coll
     margin-right: 70px
     height: 258px
@@ -170,9 +181,17 @@
     &--tryit
       width: 565px
       height: auto
-
-// goods END
-
-  187 
-    50
+    &--howdeliver
+      width: 816px
+      padding-right: 17px
+      margin-right: 0
+      height: 393px
+  &__list
+    padding-left: 0
+    list-style-position: inside
+  &__listwrap
+    height: 115px
+    overflow: hidden
+    margin-bottom: 50px
   
+// goods END  
