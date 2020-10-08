@@ -14,7 +14,7 @@ $(function() {
   $('.popnow__carousel').owlCarousel({
     nav: true,
     dots: false,
-    loop: true,
+    // loop: true,
     smartSpeed: 700,
     items: 5,
   });

@@ -1,0 +1,24 @@
+// owl-nav
+.owl-nav
+  .owl-prev, .owl-next
+    span
+      border: 1px solid red
+      font-size: 30px
+      color: $dark-green
+      background-color: lighten($turquoise, 10%)
+      height: 50px
+      width: 50px
+      border-radius: 50%
+      position: absolute
+      line-height: 40px
+      transform: translateX(-50%)
+      top: 50%
+      transition: all .3s ease
+      &:hover
+        background-color: $turquoise
+  .owl-next
+    span
+      right: 0
+      transform: translateX(50%)
+      border: none
+// owl-nav END
