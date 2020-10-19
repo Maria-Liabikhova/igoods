@@ -1,7 +1,7 @@
 // link-button
 .link
   transition: all .3s ease
-  &:hover, &:active, &:visited
+  &:hover, &:active, &:visited, &:focus
     text-decoration: none
     transition: all .3s ease
   &--button
@@ -15,23 +15,26 @@
     justify-content: center
     border-radius: 30px
     font-size: 16px
-    &:hover, &:active
+    &:hover, &:active, &:focus
       color: $white
       background-color: lighten($violet, 10% )
       cursor: pointer
-  &--top
+  &--top 
     color: $grey
     margin-right: 25px
     white-space: nowrap
-    &:hover, &:active
+    &:hover, &:active, &:focus
       color: $grey
       text-decoration: none
+  &--phone
+    margin-right: 10px
+    margin-left: -8px
   &--violet
     color: darken($violet, 20%)
     margin-left: 20px
     justify-self: center
     align-self: center
-    &:hover
+    &:hover, &:active, &:focus
       color: $violet
   &--small
     font-size: 14px

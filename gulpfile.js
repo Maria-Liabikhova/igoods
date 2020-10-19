@@ -19,8 +19,6 @@ gulp.task('browser-sync', function() {
 			baseDir: 'app'
 		},
 		notify: false,
-		// online: false, // Work offline without internet connection
-		// tunnel: true, tunnel: 'projectname', // Demonstration page: http://projectname.localtunnel.me
 	})
 });
 function bsReload(done) { browserSync.reload(); done() };
@@ -30,10 +28,9 @@ gulp.task('sass', function() {
 	.pipe(sass({outputStyle: 'expanded'}).on("error", notify.onError()))
 	.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(autoprefixer({
-		// grid: true, // Optional. Enable CSS Grid
 		overrideBrowserslist: ['last 10 versions']
 	}))
-	.pipe(cleanCSS()) // Опционально, закомментировать при отладке
+	.pipe(cleanCSS()) 
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.stream())
 });
@@ -47,14 +44,14 @@ gulp.task('js', function() {
 		'app/js/common.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
-	.pipe(uglify()) // Минимизировать весь js (на выбор)
+	.pipe(uglify())
 	.pipe(gulp.dest('app/js'))
 	.pipe(browserSync.reload({ stream: true }));
 });
 
 gulp.task('imagemin', function() {
 	return gulp.src('app/img/**/*')
-	.pipe(cache(imagemin())) // Cache Images
+	.pipe(cache(imagemin()))
 	.pipe(gulp.dest('dist/img')); 
 });
 
@@ -92,8 +89,7 @@ gulp.task('rsync', function() {
 		root: 'dist/',
 		hostname: 'username@yousite.com',
 		destination: 'yousite/public_html/',
-		// include: ['*.htaccess'], // Included files
-		exclude: ['**/Thumbs.db', '**/*.DS_Store'], // Excluded files
+		exclude: ['**/Thumbs.db', '**/*.DS_Store'], 
 		recursive: true,
 		archive: true,
 		silent: false,

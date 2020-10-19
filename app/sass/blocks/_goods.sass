@@ -1,7 +1,5 @@
 // goods
 .goods
-  input::-webkit-input-placeholder
-    color: lighten($grey, 60%)
   height: 620px
   width: 100%
   background-color: $violet
@@ -21,6 +19,8 @@
     background-color: $white
     padding: 70px 90px 90px 90px
     background-color: $light-blue
+  &__input::placeholder
+    color: lighten($grey, 60%)
   &__img
     height: 64px
     width: 64px
@@ -55,7 +55,7 @@
     justify-content: center
     flex-direction: column
     &--blue
-      width: calc(33.333% - 13px)
+      width: calc(33.333% - 14px)
       height: 308px
       margin-right: 20px
       &:last-child
