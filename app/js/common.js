@@ -19,5 +19,9 @@ $(function() {
     items: 5,
   });
 
+  $('.goods__button--howdeliver').on('click', function() {
+    $('.goods__coll--wrap').toggleClass('collapse');
+	});
+
 
 });

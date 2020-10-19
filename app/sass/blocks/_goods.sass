@@ -15,10 +15,12 @@
   &--tryit
     background-color: $white
   &--howdeliver
-    height: 580px
+    // height: 580px
+    height: auto
     background-color: $white
-    padding: 70px 90px 90px 90px
+    padding: 70px 90px 0 90px
     background-color: $light-blue
+    border: 1px dashed green
   &__input::placeholder
     color: lighten($grey, 60%)
   &__img
@@ -187,12 +189,17 @@
       width: 816px
       padding-right: 17px
       margin-right: 0
+      height: auto
+    &--wrap
       height: 393px
+      overflow: hidden
+      border: 1px solid red
+      margin-bottom: 30px
   &__list
     padding-left: 0
     list-style-position: inside
-  &__listwrap
-    height: 115px
-    overflow: hidden
-    margin-bottom: 50px
+collapse
+  height: auto !important
+  color: red
+
 // goods END  
