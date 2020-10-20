@@ -19,6 +19,11 @@
       color: $white
       background-color: lighten($violet, 10% )
       cursor: pointer
+    @media only screen and ( max-width: 768px)
+      font-size: 12px
+      height: 40px
+      width: 130px
+      line-height: 16px
   &--top 
     color: $grey
     margin-right: 25px
@@ -36,10 +41,22 @@
     align-self: center
     &:hover, &:active, &:focus
       color: $violet
+    @media only screen and ( max-width: 1280px)
+      padding-top: 35px
+      margin-left: 0
+    @media only screen and ( max-width: 768px)
+      padding-top: 15px
+      font-size: 14px
+      
+    
   &--small
     font-size: 14px
   &--wide
     width: 230px
   &--blue
     width: 250px !important
+  &--disappear
+    @media only screen and ( max-width: 1280px)
+      display: none
+      
 // link-button END
