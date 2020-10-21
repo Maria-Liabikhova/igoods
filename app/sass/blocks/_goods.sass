@@ -1,6 +1,6 @@
 // goods
 .goods
-  height: 620px
+  height: auto
   width: 100%
   background-color: $violet
   display: flex
@@ -25,6 +25,10 @@
     height: 64px
     width: 64px
     margin-bottom: 10px
+    @media only screen and ( max-width: 480px)
+        height: 54px
+        width: 54px
+        margin-bottom: 5px
     &--background
       height: 400px
       width: auto
@@ -41,14 +45,27 @@
     &:hover, &:active, &:focus
       color: $white
       text-decoration: none
+    @media only screen and ( max-width: 992px )
+      width: calc(100% / 5)
+    @media only screen and ( max-width: 768px )
+      width: calc(100% / 4)
+    @media only screen and ( max-width: 480px )
+      width: calc(100% / 3)
     &--button
       white-space: nowrap
       width: 375px
       transition: all .3s ease
       align-self: center
       text-align: center
+      margin-bottom: 85px
       &:hover
-        background-color: lighten($violet, 30%)
+        background-color: lighten($violet, 30% )
+      @media only screen and ( max-width: 992px )
+        width: 375px 
+        font-size: 16px
+      @media only screen and ( max-width: 480px )
+        font-size: 14px
+        width: 300px
   &__item
     width: calc(100% / 3)
     display: flex
@@ -56,51 +73,81 @@
     flex-direction: column
     &--blue
       width: calc(33.333% - 14px)
-      height: 308px
+      height: auto
       margin-right: 20px
       &:last-child
         margin-right: 0
+      @media only screen and ( max-width: 768px )
+        width: calc(50% - 20px)
+      @media only screen and ( max-width: 480px )
+        width: 100%
+        margin-right: auto
+        margin-left: auto
   &__wrap
     max-width: 1060px
     display: flex
     flex-direction: column
+    overflow: hidden
     &--forinput
       flex-direction: row
     &--warning
       height: 84px
   &__row
     display: flex
-    width: 1060px
-    height: 270px
+    max-width: 1060px
+    margin-bottom: 35px
+    height: auto
     flex-wrap: wrap
-    &--blue
-      margin-bottom: 50px
+    margin-left: auto
+    margin-right: auto
+    align-items: flex-start
+    @media only screen and ( max-width: 992px)
+      justify-content: space-around
+      width: 100%
   &__title
     color: $white
-    font-size: 40px
-    line-height: 50px
+    font-size: 45px
+    line-height: 55px
     margin-bottom: 50px
+    margin-top: 55px
     text-align: center
+    @media only screen and ( max-width: 768px)
+      font-size: 30px
+    @media only screen and ( max-width: 480px)
+      line-height: 45px
     &--small
       font-size: 40px
       color: $grey
-      margin-bottom: 5px
       font-weight: 500
     &--blue
       color: $grey
       font-size: 16px
       margin-bottom: 5px
+      margin-top: 5px
       line-height: 30px
       font-weight: 600
+      white-space: nowrap
+      justify-self: center
+      align-items: center
     &--delivery
       text-align: start
       margin-bottom: 18px
       margin-top: 40px
+    &--pop
+      @media only screen and ( max-width: 768px)
+        font-size: 22px
+        line-height: 35px
+        margin-bottom: 0
+        margin-top: 20px
+        width: 280px
+        margin-right: auto
+        margin-left: auto
   &__text
     font-weight: regular
     &--blue
       color: $grey
       text-align: center
+      line-height: 30px
     &--warning
       display: none
       color: $crimson
@@ -111,6 +158,11 @@
       font-size: 16px
       margin-top: 30px
       margin-bottom: 20px
+    &--violet
+      @media only screen and ( max-width: 992px)
+        font-size: 14px
+      @media only screen and ( max-width: 480px)
+        font-size: 12px
   &__yellow
     background-color: $yellow
     color: $grey
@@ -197,6 +249,8 @@
   &__list
     padding-left: 0
     list-style-position: inside
+  &__nowrap
+    white-space: nowrap
 .collapse
   height: 1400px
   max-height: auto

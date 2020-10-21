@@ -1,13 +1,13 @@
 // popnow
 .popnow
   text-align: center
-  width: 1310px
-  padding: 70px 65px
+  max-width: 1310px
+  width: 100%
+  padding: 0 65px
   margin-left: auto
   margin-right: auto
   display: block
   overflow: hidden
-  // @media only screen and ( max-width: )
   &__card
     height: 380px
     width: 250px
@@ -16,6 +16,8 @@
     flex-direction: column
     justify-content: flex-start
     align-items: flex-start
+    margin-left: auto
+    margin-right: auto
   &__img
     &--prod
       height: 160px !important
@@ -27,6 +29,8 @@
     &--shop
       width: 100px !important
       height: auto !important
+      @media only screen and ( max-width: 768px)
+        width: 70px !important
   &__price
     color: lighten($violet, 30%)
     margin-bottom: 0
@@ -34,11 +38,15 @@
       font-weight: bold
       font-size: 22px
       line-height: 25px
+      @media only screen and ( max-width: 768px)
+        font-size: 18px
     &--old
       font-size: 14px
       line-height: 16px
       text-decoration: line-through
       margin-left: -12px
+      @media only screen and ( max-width: 768px)
+        font-size: 12px
     &--grey
       color: lighten($grey, 60%)
       font-size: 16px
@@ -47,6 +55,8 @@
     height: 44px
     overflow: hidden
     text-overflow: ellipsis
+    @media only screen and ( max-width: 768px)
+      font-size: 12px
     &--volume
       color: lighten($grey, 60%)
       height: auto
@@ -67,7 +77,14 @@
     justify-content: center
     display: flex
     transition: all .5s ease
+    margin-left: auto
+    margin-right: auto
     &:hover, &:active
       color: darken($turquoise, 70%)
       background-color: darken($turquoise, 7%)
+    @media only screen and ( max-width: 768px)
+      font-size: 12px
+      line-height: 35px
+      width: 80%
+
 // popnow END
