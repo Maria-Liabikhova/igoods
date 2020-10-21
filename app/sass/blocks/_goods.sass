@@ -10,7 +10,6 @@
     background-color: lighten($turquoise, 10%)
   &--delivery
     background-color: $turquoise
-    height: 431px
     justify-content: space-around
   &--tryit
     background-color: $white
@@ -26,9 +25,9 @@
     width: 64px
     margin-bottom: 10px
     @media only screen and ( max-width: 480px)
-        height: 54px
-        width: 54px
-        margin-bottom: 5px
+      height: 54px
+      width: 54px
+      margin-bottom: 5px
     &--background
       height: 400px
       width: auto
@@ -37,6 +36,12 @@
       height: 470px
       margin-bottom: 0
       margin-top: auto
+    &--delivery
+      @media only screen and ( max-width: 992px)
+        display: none
+    &--shops
+      @media only screen and ( max-width: 480px)
+        height: auto
   &__link
     color: $white
     font-weight: semibold
@@ -66,6 +71,12 @@
       @media only screen and ( max-width: 480px )
         font-size: 14px
         width: 300px
+    &--shops
+      @media only screen and ( max-width: 480px )
+        width: calc( 100% / 4 )
+        flex-wrap: wrap
+        margin-right: 5px
+        text-align: center
   &__item
     width: calc(100% / 3)
     display: flex
@@ -90,8 +101,13 @@
     overflow: hidden
     &--forinput
       flex-direction: row
+      @media only screen and ( max-width: 480px)
+        flex-direction: column
+        height: auto !important
     &--warning
       height: 84px
+      @media only screen and ( max-width: 480px)
+        height: auto
   &__row
     display: flex
     max-width: 1060px
@@ -198,6 +214,9 @@
     &--tryit
       width: 187px
       height: 50px
+    @media only screen and ( max-width: 480px)
+      margin-bottom: 25px
+      width: 100%
   &__button
     background-color: $white
     transition: all .3s ease
@@ -223,13 +242,21 @@
       padding: 0
       &:hover
         background-color: lighten($turquoise, 3%)
+    &--delivery
+      @media only screen and ( max-width: 480px)
+        height: 35px 
+        margin-bottom: 20px
+        margin-left: 0
   &__shops
     display: flex
     justify-content: space-between
-    height: 30px
+    height: auto
+    @media only screen and ( max-width: 480px)
+      width: 100%
+      flex-wrap: wrap
   &__coll
     margin-right: 70px
-    height: 258px
+    height: auto
     width: 701px
     margin-bottom: 50px
     &--tryit
@@ -246,6 +273,12 @@
       margin-bottom: 30px
       transition: height .5s ease
       padding: 0
+    &--delivery
+      @media only screen and ( max-width: 992px)
+        margin-right: 20px
+        margin-left: 20px
+      @media only screen and ( max-width: 480px)
+        margin-bottom: 20px
   &__list
     padding-left: 0
     list-style-position: inside
