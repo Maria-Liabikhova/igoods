@@ -15,6 +15,7 @@
     justify-content: center
     border-radius: 30px
     font-size: 16px
+    white-space: nowrap
     &:hover, &:active, &:focus
       color: $white
       background-color: lighten($violet, 10% )
@@ -49,6 +50,11 @@
       font-size: 14px
   &--small
     font-size: 14px
+    @media only screen and ( max-width: 768px)
+      width: 180px
+    @media only screen and ( max-width: 480px)
+      font-size: 12px
+      width: 150px
   &--wide
     width: 230px
   &--blue

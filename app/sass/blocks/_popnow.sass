@@ -8,6 +8,8 @@
   margin-right: auto
   display: block
   overflow: hidden
+  @media only screen and ( max-width: 480px)
+    padding: 0 25px
   &__card
     height: 380px
     width: 250px
@@ -29,7 +31,6 @@
     &--shop
       width: 100px !important
       height: auto !important
-      @media only screen and ( max-width: 768px)
         width: 70px !important
   &__price
     color: lighten($violet, 30%)
