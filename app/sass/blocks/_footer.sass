@@ -1,64 +1,79 @@
 // footer
 .footer
+  width: auto
   max-width: 1440px
-  height: 410px
   display: flex
-  align-items: center
-  justify-content: center
   margin-left: auto
   margin-right: auto
-  &__row
-    align-self: center
-    width: 1119px
-    height: 304px
-    display: flex
-    flex-wrap: nowrap
-    overflow: hidden
-    margin-bottom: 30px
   &__coll
-    height: 304
-    &--icons
-      position: relative
-      margin-left: 50px
     &--logo
-      width: 260px
+      display: flex
+      height: 100%
+      flex-direction: column
+      justify-content: space-between
       padding-right: 20px
-      position: relative
+      @media only screen and ( max-width: 1280px)
+        height: auto
     &--servises
       width: 281px
+      height: 100%
       padding-right: 10px
       display: flex
       flex-direction: column
       justify-content: space-between
+      margin-left: 50px
+      @media only screen and ( max-width: 1280px)
+        display: none
     &--shops
       width: 260px
+      height: 100%
       padding-right: 10px
       display: flex
       flex-direction: column
       justify-content: space-between
       margin-bottom: 40px
+      margin-left: 50px
+      @media only screen and ( max-width: 1280px)
+        display: none
+    &--contacts
+      height: 100%
+      display: flex
+      flex-direction: column
+      margin-left: 90px
+      justify-content: space-between
+      @media only screen and ( max-width: 1280px)
+        flex-direction: row
+        width: 100%
+        margin-left: 0
+      @media only screen and ( max-width: 768px)
+        margin-left: 30px
     &--icons
       width: 287px
   &__img
     height: 60px
     margin-left: -18px
+    &--logo
+      @media only screen and ( max-width: 1280px)
+        display: none
     &--soc
       margin: 0
       height: 30px
   &__text
     &--copyright
-      position: absolute
-      bottom: 0
-      margin-bottom: 0
       color: lighten($grey, 50%)
       font-size: 14px
+      margin-bottom: 0
     &--bold
       font-size: 18px
       font-weight: 600
       line-height: 14px
+      @media only screen and ( max-width: 768px)
+        font-size: 16px
     &--time
       line-height: 14px
       margin-bottom: 25px
+      @media only screen and ( max-width: 768px)
+        font-size: 10px
   &__link
     color: $dark-green
     font-weight: 400
@@ -73,15 +88,18 @@
       height: 50px
       width: 50px
       border-radius: 50%
+    &--servises
+      margin-bottom: 15px
   &__wrap
     display: flex
     flex-direction: row
     justify-content: space-between
     width: 220px
+    @media only screen and ( max-width: 768px )
+      width: 180px
     &--soc
-      position: absolute
-      bottom: 0
-      justify-content: space-around
+      @media only screen and ( max-width: 992px )
+        display: none
   &__icon
     color: $dark-green
     background-color: $turquoise
@@ -97,4 +115,8 @@
     transition: all .3s ease
     &:hover
       background-color: lighten($turquoise, 5%)
+    @media only screen and ( max-width: 768px)
+      font-size: 16px
+      height: 40px
+      width: 40px
 // footer END  
