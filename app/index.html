@@ -113,8 +113,8 @@
 	</header>
 	<!-- header END -->
 	<section class="goods">
-		<div class="goods__wrap goods__wrap--violet">
-			<h1 class="goods__title">igooods — это <span class="goods__nowrap">80 000</span> товаров</br>и <span class="goods__yellow"> 150 гипермаркетов</span> по всей России</h1>
+		<div class="wrapper wrapper--violet">
+			<h1 class="goods__heading">igooods — это <span class="goods__nowrap">80 000</span> товаров</br> <span class="goods__nowrap">и <span class="goods__yellow"> 150 гипермаркетов</span> по всей России </span></h1>
 			<div class="goods__row">
 				<a href="#" class="goods__link">
 					<img class="goods__img" src="img/categories/fruit.png">
@@ -161,22 +161,23 @@
 		</div>
 	</section>
 	<section class="goods goods--blue">
-		<div class="goods__wrap">
-			<h2 class="goods__title goods__title--small">Как работает igooods</h2>
+		<div class="wrapper wrapper--blue">
+		<!-- <div class="goods__wrap"> -->
+			<h2 class="title">Как работает igooods</h2>
 			<div class="goods__row">
 				<div class="goods__item goods__item--blue">
 					<div class="goods__circle"><i class="fa fa-shopping-cart goods__icon"></i></div>
-					<h6 class="goods__title goods__title--blue">Вы заказываете продукты</h6>
+					<h6 class="goods__subject">Вы заказываете продукты</h6>
 					<p class="goods__text goods__text--blue">Выберите магазин и соберите корзину на сайте или в приложении. Цены как в гипермакете</p>
 				</div>
 				<div class="goods__item goods__item--blue">
 					<div class="goods__circle goods__circle--turquoise"><i class="fa fa-calendar-check-o goods__icon"></i></div>
-					<h6 class="goods__title goods__title--blue">Мы покупаем всё по списку</h6>
+					<h6 class="goods__subject">Мы покупаем всё по списку</h6>
 					<p class="goods__text goods__text--blue">Персональный закупщик купит продукты и передаст курьеру. Если чего-то нет в наличии, согласует с вами замены</p>
 				</div>
 				<div class="goods__item goods__item--blue">
 					<div class="goods__circle goods__circle--yellow"><i class="fa fa-clock-o goods__icon"></i></div>
-					<h6 class="goods__title goods__title--blue">Доставляем за полтора часа</h6>
+					<h6 class="goods__subject">Доставляем за полтора часа</h6>
 					<p class="goods__text goods__text--blue">Курьер приедет к вам в удобное время. Ближайшая доставка через 90 минут, оплата наличными или картой</p>
 				</div>
 			</div>
@@ -184,7 +185,7 @@
 		</div>
 	</section>
 	<section class="popnow">
-		<h2 class="popnow__title goods__title goods__title--small  goods__title--pop">Популярные товары в октябре</h2>
+		<h2 class="title">Популярные товары в октябре</h2>
 			<div class="popnow__carousel owl-carousel">
 				<div class="popnow__card">
 					<img class="popnow__img popnow__img--shop" src="img/label-shop/label-metro.svg">
@@ -317,67 +318,66 @@
 					<a href="#" class="popnow__link link">Заказать</a>
 				</div>
 			</div>
-		</div>
+		</section>
 	</section>
 	<section class="goods goods--delivery" > 
-		<img class="goods__img goods__img--background goods__img--delivery" src="img/bgd-img-delivery.svg">
-		<div class="goods__coll goods__coll--delivery" >
-			<h2 class="goods__title goods__title--small goods__title--delivery">Доставка по всему городу</h2>
-			<p class="goods__text">Укажите свой адрес и выберите магазин</p>
-				<div class="goods__wrap goods__wrap--warning">
-					<div class="goods__wrap goods__wrap--forinput">
-						<input class="goods__input" type="text" name="address" placeholder="Введите адрес">
-						<button class="goods__button goods__button--delivery" type="submit">Найти магазин</button>
+		<div class="wrapper wrapper--delivery">
+			<img class="goods__img goods__img--background goods__img--delivery" src="img/bgd-img-delivery.svg">
+			<div class="goods__coll goods__coll--delivery" >
+				<h2 class="title">Доставка по всему городу</h2>
+				<p class="goods__text">Укажите свой адрес и выберите магазин</p>
+					<div class="goods__wrap goods__wrap--warning">
+						<div class="goods__wrap goods__wrap--forinput">
+							<input class="goods__input" type="text" name="address" placeholder="Введите адрес">
+							<button class="goods__button goods__button--delivery" type="submit">Найти магазин</button>
+						</div>
+						<p class="goods__text goods__text--warning">поле не заполнено</p>
 					</div>
-					<p class="goods__text goods__text--warning">поле не заполнено</p>
+				<p class="goods__text">Работаем с 7 сетями в Санкт-Петербурге</p>
+				<div class="goods__shops">
+					<a href="#" class="goods__link goods__link--shops"><img class="goods__img goods__img--shops" src="img/label-shop/label-metro.svg"></a>
+					<a href="#" class="goods__link goods__link--shops"><img class="goods__img goods__img--shops" src="img/label-shop/label-lenta.svg"></a>
+					<a href="#" class="goods__link goods__link--shops"><img class="goods__img goods__img--shops" src="img/label-shop/label-prisma.svg"></a>
+					<a href="#" class="goods__link goods__link--shops"><img class="goods__img goods__img--shops" src="img/label-shop/label-babylon.svg"></a>
+					<a href="#" class="goods__link goods__link--shops"><img class="goods__img goods__img--shops" src="img/label-shop/label-vkusvill.svg"></a>
+					<a href="#" class="goods__link goods__link--shops"><img class="goods__img goods__img--shops" src="img/label-shop/label-karusel.svg"></a>
+					<a href="#" class="goods__link goods__link--shops"><img class="goods__img goods__img--shops" src="img/label-shop/label-auchan.svg"></a>
 				</div>
-			<p class="goods__text">Работаем с 7 сетями в Санкт-Петербурге</p>
-			<div class="goods__shops">
-				<a href="#" class="goods__link goods__link--shops"><img class="goods__img goods__img--shops" src="img/label-shop/label-metro.svg"></a>
-				<a href="#" class="goods__link goods__link--shops"><img class="goods__img goods__img--shops" src="img/label-shop/label-lenta.svg"></a>
-				<a href="#" class="goods__link goods__link--shops"><img class="goods__img goods__img--shops" src="img/label-shop/label-prisma.svg"></a>
-				<a href="#" class="goods__link goods__link--shops"><img class="goods__img goods__img--shops" src="img/label-shop/label-babylon.svg"></a>
-				<a href="#" class="goods__link goods__link--shops"><img class="goods__img goods__img--shops" src="img/label-shop/label-vkusvill.svg"></a>
-				<a href="#" class="goods__link goods__link--shops"><img class="goods__img goods__img--shops" src="img/label-shop/label-karusel.svg"></a>
-				<a href="#" class="goods__link goods__link--shops"><img class="goods__img goods__img--shops" src="img/label-shop/label-auchan.svg"></a>
 			</div>
 		</div>
 	</section>
 	<section class="goods goods--tryit">
-		<div class="wrapper">
 			<div class="goods__coll goods__coll--tryit" >
-				<h2 class="goods__title goods__title--small goods__title--delivery goods__title--tryit">Попробуйте, это удобно</h2>
-				<p class="goods__text goods__text--tryit">Каталог работает на любой платформе — на сайте, на Android и на iOS. Удобнее всего собирать корзину в мобильном приложении: скидки, адреса и отслеживание заказа всегда под рукой</p>
-				<p class="goods__text goods__text--small">Пришлём ссылку на приложение. Без спама</p>
-					<div class="goods__wrap goods__wrap--forinput">
-						<input class="goods__input goods__input--tryit" type="text" name="address" placeholder="+7(ХХХ)ХХХ-ХХ-ХХ">
-						<button class="goods__button goods__button--tryit" type="submit">Получить ссылку</button>
-					</div>
-					<p class="goods__text goods__text--warning">поле не заполнено</p>
+			<h2 class="title goods__nowrap title--start">Попробуйте, это удобно</h2>
+			<p class="goods__text goods__text--tryit">Каталог работает на любой платформе — на сайте, на Android и на iOS. Удобнее всего собирать корзину в мобильном приложении: скидки, адреса и отслеживание заказа всегда под рукой</p>
+			<p class="goods__text goods__text--small">Пришлём ссылку на приложение. Без спама</p>
+				<div class="goods__wrap goods__wrap--forinput">
+					<input class="goods__input goods__input--tryit" type="text" name="address" placeholder="+7(ХХХ)ХХХ-ХХ-ХХ">
+					<button class="goods__button goods__button--tryit" type="submit">Получить ссылку</button>
 				</div>
-				<img class="goods__img goods__img--tryit goods__img--background" src="img/bg-app.png">
-			</div> 
+				<p class="goods__text goods__text--warning">поле не заполнено</p>
 		</div> 
+		<img class="goods__img goods__img--tryit goods__img--background" src="img/bg-app.png">
 	</section>
 	<section class="goods goods--howdeliver"> 
 		<div class="wrapper wrapper--howdeliver">
 			<div class="goods__coll goods__coll--howdeliver" >
 				<div class="goods__coll--wrap">
-					<h2 class="goods__title goods__title--small goods__title--delivery">Как происходит доставка продуктов из магазинов</h2>
+					<h2 class="title title--start">Как происходит доставка продуктов из магазинов</h2>
 					<p class="goods__text goods__text--small">Вместо двух- (а то и четырёх-) часовой поездки в супермаркет Вы получаете товары и свежие продукты на дом по ценам магазина, в удобное для Вас время, ожидая курьера не более 25 минут!</p>
 					<ol class="goods__list">
-						<li class="goods__text goods__text--tryit">Заказ производится через сайт или мобильное приложение интернет-магазина продуктов igooods. Цены в каталоге равны ценам в гипермаркетах Санкт-Петербурга: METRO, ЛЕНТА, PRISMA, ВКУСВИЛЛ, КАРУСЕЛЬ, АШАН и ценам Super Babylon (кроме 4% позиций от общего количества товаров этой сети), включая акционные товары. Оплата заказа - при получении.</li>
-						<li class="goods__text goods__text--tryit">Вы выбираете доступное время доставки. Обычно все делают выбор в пользу доставки в тот же день, и как можно быстрее. Мы стараемся привезти ваш заказ точно к назначенному времени, но отклонение может составить плюс-минус 25 минут. Вы можете отслеживать комплектацию и доставку продуктов питания в Личном кабинете в режиме реального времени.</li>
-						<li class="goods__text goods__text--tryit">В торговом зале магазина Ваш заказ собирает Персональный Закупщик igooods. Внимательно и придирчиво. Как для себя! Молочные продукты самые свежие, с максимальной датой (из глубин полки, конечно же!), яйца внутри упаковки целые, овощи-фрукты посимпатичнее и т.д.</li>
-						<li class="goods__text goods__text--tryit">Если, пока шёл заказ, какой-то товар или продукт из ассортимента интернет-магазина закончился или у всей партии плохой товарный вид, Персональный Закупщик позвонит Вам, объяснит ситуацию и предложит варианты замен.</li>
+						<li class="goods__text goods__text--tryit goods__text--howdeliver">Заказ производится через сайт или мобильное приложение интернет-магазина продуктов igooods. Цены в каталоге равны ценам в гипермаркетах Санкт-Петербурга: METRO, ЛЕНТА, PRISMA, ВКУСВИЛЛ, КАРУСЕЛЬ, АШАН и ценам Super Babylon (кроме 4% позиций от общего количества товаров этой сети), включая акционные товары. Оплата заказа - при получении.</li>
+						<li class="goods__text goods__text--tryit goods__text--howdeliver">Вы выбираете доступное время доставки. Обычно все делают выбор в пользу доставки в тот же день, и как можно быстрее. Мы стараемся привезти ваш заказ точно к назначенному времени, но отклонение может составить плюс-минус 25 минут. Вы можете отслеживать комплектацию и доставку продуктов питания в Личном кабинете в режиме реального времени.</li>
+						<li class="goods__text goods__text--tryit goods__text--howdeliver">В торговом зале магазина Ваш заказ собирает Персональный Закупщик igooods. Внимательно и придирчиво. Как для себя! Молочные продукты самые свежие, с максимальной датой (из глубин полки, конечно же!), яйца внутри упаковки целые, овощи-фрукты посимпатичнее и т.д.</li>
+						<li class="goods__text goods__text--tryit goods__text--howdeliver">Если, пока шёл заказ, какой-то товар или продукт из ассортимента интернет-магазина закончился или у всей партии плохой товарный вид, Персональный Закупщик позвонит Вам, объяснит ситуацию и предложит варианты замен.</li>
 					</ol>
-					<h2 class="goods__title goods__title--small goods__title--delivery">Начните экономить с igooods в Санкт-Петербурге уже сегодня!</h2>
+					<h2 class="title">Начните экономить с igooods в Санкт-Петербурге уже сегодня!</h2>
 					<p class="goods__text goods__text--small">Как изменятся ваши траты при заказе доставки еды и прочих товаров через интернет-магазин igooods? Ваши "транспортные расходы" увеличатся всего на 50-150 рублей (стоимость доставки минус ваша обычная стоимость проезда от дома до гипермаркета на общественном транспорте либо на автомобиле).</p>
 					<ol class="goods__list">
-						<li class="goods__text goods__text--tryit"> Перейдите в каталог igooods или скачайте наше приложение:</li>
-						<li class="goods__text goods__text--tryit"> Введите название улицы и номер дома; система покажет вам список магазинов продуктов с доставкой от сервиса igooods, доступных по вашему адресу. Выберите продуктовый магазин из этого списка.</li>
-						<li class="goods__text goods__text--tryit">Регистрируйтесь, добавляйте товары и продукты в онлайн-корзину, формируйте заказ, в случае любых затруднений звоните по телефону горячей линии в Санкт-Петербурге: <br>8 (812) 504 89 52 (с 10.00 до 23.00 ежедневно)</li>
-						<li class="goods__text goods__text--tryit">Купите продукты с доставкой на дом по льготной цене 199 рублей для первого заказа!</li>
+						<li class="goods__text goods__text--tryit goods__text--howdeliver"> Перейдите в каталог igooods или скачайте наше приложение:</li>
+						<li class="goods__text goods__text--tryit goods__text--howdeliver"> Введите название улицы и номер дома; система покажет вам список магазинов продуктов с доставкой от сервиса igooods, доступных по вашему адресу. Выберите продуктовый магазин из этого списка.</li>
+						<li class="goods__text goods__text--tryit goods__text--howdeliver">Регистрируйтесь, добавляйте товары и продукты в онлайн-корзину, формируйте заказ, в случае любых затруднений звоните по телефону горячей линии в Санкт-Петербурге: <br>8 (812) 504 89 52 (с 10.00 до 23.00 ежедневно)</li>
+						<li class="goods__text goods__text--tryit goods__text--howdeliver">Купите продукты с доставкой на дом по льготной цене 199 рублей для первого заказа!</li>
 					</ol>
 				</div>
 				<button class="goods__button goods__button--tryit goods__button--howdeliver" type="submit">Узнать больше</button>

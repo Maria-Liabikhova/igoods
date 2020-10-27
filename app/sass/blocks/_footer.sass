@@ -1,77 +1,81 @@
 // footer
 .footer
-  width: auto
-  max-width: 1440px
+  width: 100%
   display: flex
-  margin-left: auto
-  margin-right: auto
+  justify-content: center
   &__coll
+    height: 100%
+    width: auto
+    display: flex
+    flex-direction: column
+    justify-content: space-between
     &--logo
-      display: flex
-      height: 100%
-      flex-direction: column
-      justify-content: space-between
       padding-right: 20px
+      align-items: start
       @media only screen and ( max-width: 1280px)
+        padding-right: 0
+      @media only screen and ( max-width: 992px)
         height: auto
+        align-self: start
     &--servises
-      width: 281px
-      height: 100%
-      padding-right: 10px
-      display: flex
-      flex-direction: column
-      justify-content: space-between
-      margin-left: 50px
+      margin-left: 40px
       @media only screen and ( max-width: 1280px)
+        // width: 210px
+        padding-right: 5px
+        margin-left: 50px
+      @media only screen and ( max-width: 992px)
         display: none
     &--shops
-      width: 260px
-      height: 100%
-      padding-right: 10px
-      display: flex
-      flex-direction: column
-      justify-content: space-between
-      margin-bottom: 40px
       margin-left: 50px
       @media only screen and ( max-width: 1280px)
+        width: 210px
+        margin-left: 30px
+        padding-right: 5px
+      @media only screen and ( max-width: 992px)
         display: none
     &--contacts
-      height: 100%
-      display: flex
-      flex-direction: column
-      margin-left: 90px
-      justify-content: space-between
-      @media only screen and ( max-width: 1280px)
+      margin-left: 50px
+      @media only screen and ( max-width: 992px)
         flex-direction: row
         width: 100%
         margin-left: 0
       @media only screen and ( max-width: 768px)
         margin-left: 30px
     &--icons
-      width: 287px
+      display: block
   &__img
     height: 60px
     margin-left: -18px
     &--logo
       @media only screen and ( max-width: 1280px)
+        height: 40px
+        margin-left: 0
+      @media only screen and ( max-width: 992px)
         display: none
     &--soc
       margin: 0
       height: 30px
+      @media only screen and ( max-width: 1280px)
+        height: 25px
   &__text
     &--copyright
       color: lighten($grey, 50%)
       font-size: 14px
       margin-bottom: 0
+      white-space: nowrap
+      @media only screen and ( max-width: 1280px)
+        font-size: 12px
     &--bold
       font-size: 18px
       font-weight: 600
-      line-height: 14px
+      line-height: 30px
       @media only screen and ( max-width: 768px)
         font-size: 16px
     &--time
       line-height: 14px
       margin-bottom: 25px
+      @media only screen and ( max-width: 1280px)
+        font-size: 12px
       @media only screen and ( max-width: 768px)
         font-size: 10px
   &__link
@@ -81,22 +85,25 @@
     line-height: 22px
     white-space: nowrap
     transition: all .3s ease
+    margin-bottom: 15px
     &:hover, &:active, &:focus
       color: $grey
       font-size: 15px
+    @media only screen and ( max-width: 1280px)
+      font-size: 12px
+      line-height: 12px
     &--icon
       height: 50px
       width: 50px
       border-radius: 50%
-    &--servises
-      margin-bottom: 15px
+      @media only screen and ( max-width: 480px)
+        width: 35px
+        height: 35px
   &__wrap
     display: flex
     flex-direction: row
     justify-content: space-between
-    width: 220px
-    @media only screen and ( max-width: 768px )
-      width: 180px
+    width: 100%
     &--soc
       @media only screen and ( max-width: 992px )
         display: none
@@ -115,8 +122,12 @@
     transition: all .3s ease
     &:hover
       background-color: lighten($turquoise, 5%)
-    @media only screen and ( max-width: 768px)
+    @media only screen and ( max-width: 1280px)
       font-size: 16px
       height: 40px
       width: 40px
+    @media only screen and ( max-width: 480px)
+      font-size: 14px
+      height: 30px
+      width: 30px
 // footer END  

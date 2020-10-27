@@ -6,12 +6,18 @@
   align-self: flex-start
   background-color: $white
   border-radius: 4px
-  @media only screen and ( max-width: 992px)
+  @media only screen and ( max-width: 1200px)
     width: 100%
-    margin-bottom: 90px
+    display: flex
+    flex-direction: column
+    align-items: center
   &__img
     margin-bottom: 20px
   &__text
     margin-bottom: 42px
     font-weight: bold
+    font-size: 18px
+    @media only screen and ( max-width: 1200px)
+      max-width: 350px
+      text-align: center
 // trynow END

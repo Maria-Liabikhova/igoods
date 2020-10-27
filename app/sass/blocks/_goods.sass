@@ -6,6 +6,7 @@
   display: flex
   justify-content: center
   align-items: center
+  overflow: hidden
   &--blue
     background-color: lighten($turquoise, 10%)
   &--delivery
@@ -39,9 +40,11 @@
       width: auto
       margin-left: 70px
     &--tryit
-      height: 470px
+      height: 370px
       margin-bottom: 0
       margin-top: auto
+      @media only screen and ( max-width: 1280px)
+        height: 300px
     &--delivery, &--tryit
       @media only screen and ( max-width: 992px)
         display: none
@@ -69,7 +72,7 @@
       transition: all .3s ease
       align-self: center
       text-align: center
-      margin-bottom: 85px
+      // margin-bottom: 85px
       &:hover
         background-color: lighten($violet, 30% )
       @media only screen and ( max-width: 992px )
@@ -78,7 +81,7 @@
       @media only screen and ( max-width: 480px )
         font-size: 14px
         width: 300px
-        margin-bottom: 65px
+        // margin-bottom: 65px
     &--shops
       @media only screen and ( max-width: 480px )
         width: calc( 100% / 4 )
@@ -103,8 +106,11 @@
         margin-right: auto
         margin-left: auto
   &__wrap
-    max-width: 1060px
+    width: auto
+    max-width: 1279px
     display: flex
+    // justify-content: center
+    // align-items: center
     flex-direction: column
     overflow: hidden
     &--forinput
@@ -116,10 +122,10 @@
       height: 84px
       @media only screen and ( max-width: 480px)
         height: auto
-    &--violet
-      @media only screen and ( max-width: 768px)
-        margin-left: 20px
-        margin-right: 20px
+    // &--violet
+    //   @media only screen and ( max-width: 768px)
+    //     margin-left: 20px
+    //     margin-right: 20px
   &__row
     display: flex
     max-width: 1060px
@@ -134,11 +140,14 @@
       width: 100%
     @media only screen and ( max-width: 480px)
       margin-bottom: 25px
-  &__title
+  &__heading
     color: $white
-    font-size: 45px
-    line-height: 55px
-    margin-bottom: 50px
+    font-size: 40px
+    line-height: 50px
+    margin-bottom: 30px
+    text-align: center
+    font-style: normal
+    font-weight: 600
     text-align: center
     @media only screen and ( max-width: 768px)
       font-size: 30px
@@ -148,48 +157,49 @@
       line-height: 45px
       margin-bottom: 20px
       margin-top: 25px
-    &--small
-      font-size: 40px
-      color: $grey
-      font-weight: 500
-      display: block
-      @media only screen and ( max-width: 768px)
-        font-size: 22px
-        line-height: 35px
-    &--blue
-      color: $grey
+    // &--small
+    //   font-size: 40px
+    //   color: $grey
+    //   font-weight: 500
+    //   display: block
+    //   @media only screen and ( max-width: 768px)
+    //     font-size: 22px
+    //     line-height: 35px
+  &__subject
+    color: $grey
+    font-size: 18px
+    margin-bottom: 5px
+    margin-top: 5px
+    line-height: 30px
+    font-weight: 600
+    white-space: nowrap
+    text-align: center
+    margin-top: 0
+    margin-bottom: 8px
+    @media only screen and ( max-width: 768px)
       font-size: 16px
-      margin-bottom: 5px
-      margin-top: 5px
-      line-height: 30px
-      font-weight: 600
-      white-space: nowrap
-      justify-self: center
-      align-items: center
-    &--delivery
-      text-align: start
-      margin-bottom: 18px
-      @media only screen and ( max-width: 768px)
-        margin-bottom: 10px
-        margin-top: 25px
-        text-align: center
-    &--pop
-      @media only screen and ( max-width: 768px)
-        margin-bottom: 0
-        margin-top: 20px
-        width: 280px
-        margin-right: auto
-        margin-left: auto
-    &--tryit
-      text-align: start
+      margin-bottom: 10px
+    // justify-self: center
+    // align-items: center
+    // &--delivery
+    //   text-align: start
+    //   margin-bottom: 18px
+    //   @media only screen and ( max-width: 768px)
+    //     margin-bottom: 10px
+    //     margin-top: 25px
+    //     text-align: center
+    // &--pop
+    //   @media only screen and ( max-width: 768px)
+    //     margin-bottom: 0
+    //     margin-top: 20px
+    //     width: 280px
+    //     margin-right: auto
+    //     margin-left: auto
+    // &--tryit
+    //   text-align: start
       // @media only screen and ( max-width: 768px)
   &__text
     font-weight: regular
-    margin-bottom: 15px
-    @media only screen and ( max-width: 992px)
-      font-size: 14px !important
-    @media only screen and ( max-width: 780px)
-      line-height: 20px !important
     &--blue
       color: $grey
       text-align: center
@@ -200,12 +210,22 @@
     &--tryit
       font-size: 18px
       line-height: 30px
+      width: 80%
+      margin-bottom: 15px
+      @media only screen and ( max-width: 992px)
+        font-size: 18px
+        width: 100%
     &--small
       font-size: 16px
-      margin-top: 30px
-      margin-bottom: 20px
+      // @media only screen and ( max-width: 720px)
+      //   margin: 0
       @media only screen and ( max-width: 480px)
-        font-size: 12px !important
+        font-size: 12px 
+    &--howdeliver
+      @media only screen and ( max-width: 1280px)
+        font-size: 14px
+        line-height: 26px
+        margin-bottom: 0
   &__yellow
     background-color: $yellow
     color: $grey
@@ -287,7 +307,7 @@
   &__coll
     margin-right: 70px
     height: auto
-    max-width: 701px
+    max-width: 1000pxpx
     margin-bottom: 50px
     overflow: hidden
     // @media only screen and ( max-width: 992px)
@@ -295,16 +315,16 @@
     //   margin-right: 20px !important
       // width: 100% !important
     &--tryit
-      max-width: 565px
+      max-width: 767px
+      width: auto
       height: auto
+      margin: 90px 0px 90px 80px
     &--howdeliver
       max-width: 816px
       width: auto 
-      // padding-right: 17px
-      // @media only screen and ( max-width: 992px)
-      //   margin-right: 0 !important
-      //   padding-right: 0
-      //   margin-left: 0 !important
+      @media only screen and ( max-width: 992px)
+        margin-right: 0 
+        margin-left: 0
     &--wrap
       height: 393px
       overflow: hidden
@@ -319,19 +339,23 @@
     list-style-position: inside
   &__nowrap
     white-space: nowrap
+    @media only screen and ( max-width: 992px)
+      white-space: pre-wrap
 .collapse
   height: 1600px
   max-height: auto
   transition: height .5s ease
+  @media only screen and ( max-width: 1440px)
+    height: 1450px
   @media only screen and ( max-width: 1280px)
-    height: 1900px
-  @media only screen and ( max-width: 992px)
-    height: 1500px
-  @media only screen and ( max-width: 814px)
-    height: 1700px
-  @media only screen and ( max-width: 768px)
-    height: 1400px
-  @media only screen and ( max-width: 480px)
-    height: auto
+    height: 1550px
+  // @media only screen and ( max-width: 992px)
+  //   height: 2000px
+  // @media only screen and ( max-width: 814px)
+  //   height: 1700px
+  // @media only screen and ( max-width: 768px)
+  //   height: 1400px
+  // @media only screen and ( max-width: 480px)
+  //   height: auto
 
 // goods END  
