@@ -1,7 +1,8 @@
 // profits
 .profits
-  margin-left: auto
-  margin-right: auto
+  // margin-left: auto
+  // margin-right: auto
+  width: 100%
   &__wrap
     margin-left: auto
     margin-right: auto
@@ -9,22 +10,22 @@
     height: 480px
     position: relative
     width: 100%
-    border-radius: 15px
+    border-radius: 25px
     overflow: hidden
     background-size: cover
     background-position: center
     margin-bottom: 10px
     @media only screen and ( max-width: 1280px)
-      width: 850px
+      width: 991px
     @media only screen and ( max-width: 768px)
-      width: 500px
+      width: 479px
       background-size: 100%
       background-repeat: no-repeat
     @media only screen and ( max-width: 480px)
-      width: 300px
+      width: 319px
       background: none
-    @media only screen and ( max-width: 480px)
-      height: 450px
+    // @media only screen and ( max-width: 480px)
+    //   height: 450px
   &--home
     background-color: $turquoise
   &--catalog
@@ -45,6 +46,11 @@
     align-items: flex-start
     background-size: cover
     background-position: center
+    @media only screen and ( max-width: 768px)
+      margin-left: 35px
+    @media only screen and ( max-width: 420px)
+      margin-left: 5px
+      margin-right: 5px
   &__link-wrap
     display: flex
     justify-content: center
@@ -98,10 +104,12 @@
     line-height: 50px
     margin-top: 50px
     @media only screen and ( max-width: 768px)
-      font-size: 25px
+      letter-spacing: .4px
+      font-size: 20px
       line-height: 35px
       margin-top: 35px
     @media only screen and ( max-width: 480px)
+      font-size: 16px
       margin-top: 25px
     &--navy
       color: $navy
@@ -119,7 +127,8 @@
     @media only screen and ( max-width: 480px)
       font-size: 16px
       line-height: 25px
-      width: 150px
+      margin-left: 10px
+      margin-right: 10px
       padding-top: 15px
       margin-bottom: 20px
     &--navy
