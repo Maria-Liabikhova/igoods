@@ -55,17 +55,19 @@
   &__link
     color: $white
     font-weight: semibold
-    width: calc(100% / 5)
+    width: calc(100% / 5 - 10px)
     text-align: center
     &:hover, &:active, &:focus
       color: $white
       text-decoration: none
     @media only screen and ( max-width: 992px )
-      width: calc(100% / 5)
+      width: calc(100% / 5 - 10px)
     @media only screen and ( max-width: 768px )
-      width: calc(100% / 4)
+      width: calc(100% / 4 - 10px)
     @media only screen and ( max-width: 480px )
-      width: calc(100% / 3)
+      width: calc(100% / 2  - 10px)
+    &--card
+      margin-right: 10px
     &--button
       white-space: nowrap
       width: 375px
@@ -141,6 +143,9 @@
     @media only screen and ( max-width: 768px)
       margin-left: 40px
       margin-right: 40px
+    @media only screen and ( max-width: 480px)
+      margin-left: 10px
+      margin-right: 10px
   &__heading
     color: $white
     font-size: 40px
