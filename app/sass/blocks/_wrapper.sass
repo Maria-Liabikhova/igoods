@@ -1,13 +1,17 @@
 // wrapper
 .wrapper
   margin: 70px 80px 90px 80px
-  width: auto
+  width: 100%
   max-width: 1279px
   background-color: $white
   display: flex
   justify-content: center
   align-items: center
   overflow: hidden
+  @media only screen and ( max-width: 1280px )
+    margin: 50px 60px 50px 60px
+  @media only screen and ( max-width: 992px )
+    margin: 40px 50px 40px 50px
   &--violet
     margin-bottom: 100px
     flex-direction: column
@@ -38,10 +42,6 @@
     @media only screen and ( max-width: 1280px)
       margin-right: 20px
       margin-left: 20px
-    // @media only screen and ( max-width: 992px)
-    //   margin-right: 20px
-    //   margin-left: 90px
-
     @media only screen and ( max-width: 768px)
       margin-top: 50px
       margin-bottom: 40px
@@ -49,6 +49,11 @@
       margin: 30px
   &--popnow
     flex-direction: column
+    padding-left: 25px
+    padding-right: 25px
+    @media only screen and ( max-width: 1280px )
+      padding-left: 0
+      padding-right: 0
   &--delivery
     background-color: $turquoise
     margin-bottom: 30px

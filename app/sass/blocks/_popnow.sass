@@ -1,37 +1,26 @@
 // popnow
 .popnow
-  text-align: center
-  max-width: 1279px
+  display: flex
   width: 100%
-  padding: 70px 65px
   margin-left: auto
   margin-right: auto
-  display: block
-  overflow: hidden
-  @media only screen and ( max-width: 480px)
-    padding: 0 25px
+  justify-content: center
   &__card
-    height: 380px
-    width: 250px
+    width: auto
     padding: 20px 24px  24px 24px
     display: flex
     flex-direction: column
-    justify-content: flex-start
-    align-items: flex-start
-    margin-left: auto
-    margin-right: auto
   &__img
     &--prod
-      height: 160px !important
+      height: 160px 
       width: 160px !important
       margin-left: auto
       margin-right: auto
     &--water
       width: auto !important
     &--shop
-      width: 100px !important
-      height: auto !important
-        width: 70px !important
+      height: 30px 
+      width: 70px !important
   &__price
     color: lighten($violet, 30%)
     margin-bottom: 0
@@ -71,15 +60,13 @@
     color: darken($turquoise, 70%)
     font-size: 14px
     line-height: 40px
-    width: 100%
+    width: calc( 100% - 5px )
     border-radius: 5px
     background-color: $turquoise
     align-items: center
     justify-content: center
     display: flex
     transition: all .5s ease
-    margin-left: auto
-    margin-right: auto
     &:hover, &:active
       color: darken($turquoise, 70%)
       background-color: darken($turquoise, 7%)
@@ -87,5 +74,6 @@
       font-size: 12px
       line-height: 35px
       width: 80%
-
+  &__carousel
+    display: flex
 // popnow END
