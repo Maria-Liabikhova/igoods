@@ -30,7 +30,7 @@
 
 <body class="body">
 	<!-- header -->
-	<header class="header">
+	<header class="header" hidden>
 		<div class="header__top">
 			<img class="header__img" src="img/label.jpg" alt="логотип">
 			<div class="header__list">
@@ -112,7 +112,7 @@
 		</section>
 	</header>
 	<!-- header END -->
-	<section class="goods"> 
+	<section class="goods" hidden> 
 		<div class="wrapper wrapper--violet">
 			<h1 class="goods__heading">igooods — это <span class="goods__nowrap">80 000</span> товаров</br> <span class="goods__nowrap">и <span class="goods__yellow"> 150 гипермаркетов</span> по всей России </span></h1>
 			<div class="goods__row">
@@ -160,7 +160,7 @@
 			<a href="#" class="goods__link goods__link--button link--button">Выбрать магазин и посмотреть каталог</a>
 		</div>
 	</section>
-	<section class="goods goods--blue">
+	<section class="goods goods--blue" hidden>
 		<div class="wrapper wrapper--blue">
 		<!-- <div class="goods__wrap"> -->
 			<h2 class="title">Как работает igooods</h2>
@@ -184,7 +184,7 @@
 			<a href="#" class="goods__link goods__link--button  link--button link--blue">Заказать доставку от 199 ₽</a>
 		</div>
 	</section>
-	<section class="popnow">
+	<section class="popnow" hidden>
 		<div class="wrapper wrapper--popnow">
 			<h2 class="title">Популярные товары в октябре</h2>
 				<div class="popnow__carousel owl-carousel">
@@ -322,12 +322,12 @@
 			</div>
 		</section>
 	</section>
-	<section class="goods goods--delivery" hidden> 
-		<div class="wrapper wrapper--delivery">
-			<img class="goods__img goods__img--background goods__img--delivery" src="img/bgd-img-delivery.svg">
+	<section class="goods goods--delivery"> 
+		<div class="wrapper wrapper--delivery"style="background-image: url(img/bgd-img-delivery.svg)">
+			<!-- <img class="goods__img goods__img--background goods__img--delivery" src="img/bgd-img-delivery.svg"> -->
 			<div class="goods__coll goods__coll--delivery" >
 				<h2 class="title">Доставка по всему городу</h2>
-				<p class="goods__text">Укажите свой адрес и выберите магазин</p>
+				<p class="goods__text goods__text--delivery">Укажите свой адрес и выберите магазин</p>
 					<div class="goods__wrap goods__wrap--warning">
 						<div class="goods__wrap goods__wrap--forinput">
 							<input class="goods__input" type="text" name="address" placeholder="Введите адрес">

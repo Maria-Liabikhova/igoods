@@ -6,7 +6,6 @@
   display: flex
   justify-content: center
   align-items: center
-  overflow: hidden
   &--blue
     background-color: lighten($turquoise, 10%)
   &--delivery
@@ -18,10 +17,10 @@
     padding: 70px 90px 0 90px
     padding: 0
     background-color: $light-blue
-    @media only screen and ( max-width: 992px)
+    @media only screen and ( max-width: 991px)
       padding: 0
       flex-direction: column
-    @media only screen and ( max-width: 768px)
+    @media only screen and ( max-width: 767px)
       padding: 0
   &__input:placeholder
     color: lighten($grey, 60%)
@@ -41,27 +40,31 @@
       height: 370px
       margin-bottom: 0
       margin-top: auto
-      @media only screen and ( max-width: 1280px)
+      @media only screen and ( max-width: 1279px)
         height: 300px
     &--delivery, &--tryit
-      @media only screen and ( max-width: 992px)
+      @media only screen and ( max-width: 991px)
         display: none
     &--shops
+      height: auto
+      width: 90px
       margin-bottom: 0
+      @media only screen and ( max-width: 767px)
+        width: 60px
   &__link
     color: $white
     font-weight: semibold
-    width: calc(100% / 5 - 10px)
+    // width: calc(100% / 5 - 10px)
     text-align: center
     &:hover, &:active, &:focus
       color: $white
       text-decoration: none
-    @media only screen and ( max-width: 992px )
-      width: calc(100% / 5 - 10px)
-    @media only screen and ( max-width: 768px )
-      width: calc(100% / 4 - 10px)
-    @media only screen and ( max-width: 480px )
-      width: calc(100% / 2  - 10px)
+    // @media only screen and ( max-width: 991px )
+    //   width: calc(100% / 5 - 10px)
+    // @media only screen and ( max-width: 767px )
+    //   width: calc(100% / 4 - 10px)
+    // @media only screen and ( max-width: 479px )
+    //   width: calc(100% / 2  - 10px)
     &--card
       margin-right: 10px
     &--button
@@ -72,21 +75,20 @@
       text-align: center
       &:hover
         background-color: lighten($violet, 30% )
-      @media only screen and ( max-width: 992px )
+      @media only screen and ( max-width: 991px )
         width: 375px 
         font-size: 16px
-      @media only screen and ( max-width: 480px )
+      @media only screen and ( max-width: 479px )
         font-size: 12px
         padding-right: 10px
         padding-left: 10px
         width: auto
         // margin-bottom: 65px
     &--shops
-      @media only screen and ( max-width: 480px )
-        width: calc( 100% / 4 )
+      width: calc( 100% / 7 + 20px)
+      @media only screen and ( max-width: 479px )
         flex-wrap: wrap
         margin-right: 5px
-        text-align: center
   &__item
     width: calc(100% / 3)
     display: flex
@@ -97,18 +99,18 @@
       align-self: start
       margin-left: 40px
       margin-right: 40px
-      @media only screen and ( max-width: 992px )
+      @media only screen and ( max-width: 991px )
         width: calc(100% / 2 - 140px)
         margin-left: 70px
         margin-right: 70px
-      @media only screen and ( max-width: 768px )
+      @media only screen and ( max-width: 767px )
         width: 100%
       @media only screen and ( max-width: 420px )
         margin-left: 0
         margin-right: 0
   &__wrap
     width: auto
-    max-width: 1279px
+    max-width: 1280px
     display: flex
     // justify-content: center
     // align-items: center
@@ -116,15 +118,15 @@
     overflow: hidden
     &--forinput
       flex-direction: row
-      @media only screen and ( max-width: 480px)
+      @media only screen and ( max-width: 479px)
         flex-direction: column
         height: auto !important
     &--warning
       height: 84px
-      @media only screen and ( max-width: 480px)
+      @media only screen and ( max-width: 479px)
         height: auto
     // &--violet
-    //   @media only screen and ( max-width: 768px)
+    //   @media only screen and ( max-width: 767px)
     //     margin-left: 20px
     //     margin-right: 20px
   &__row
@@ -136,10 +138,10 @@
     margin-left: auto
     margin-right: auto
     justify-content: center
-    @media only screen and ( max-width: 768px)
+    @media only screen and ( max-width: 767px)
       margin-left: 40px
       margin-right: 40px
-    @media only screen and ( max-width: 480px)
+    @media only screen and ( max-width: 479px)
       margin-left: 10px
       margin-right: 10px
   &__heading
@@ -151,9 +153,9 @@
     font-style: normal
     font-weight: 600
     text-align: center
-    @media only screen and ( max-width: 768px)
+    @media only screen and ( max-width: 767px)
       font-size: 30px
-    @media only screen and ( max-width: 480px)
+    @media only screen and ( max-width: 479px)
       font-size: 22px
       line-height: 35px !important
       line-height: 45px
@@ -164,7 +166,7 @@
     //   color: $grey
     //   font-weight: 500
     //   display: block
-    //   @media only screen and ( max-width: 768px)
+    //   @media only screen and ( max-width: 767px)
     //     font-size: 22px
     //     line-height: 35px
   &__subject
@@ -179,11 +181,11 @@
     margin-top: 0
     width: auto
     margin-bottom: 8px
-    @media only screen and ( max-width: 768px)
+    @media only screen and ( max-width: 767px)
       font-size: 16px
       margin-bottom: 10px
     // &--pop
-    //   @media only screen and ( max-width: 768px)
+    //   @media only screen and ( max-width: 767px)
     //     margin-bottom: 0
     //     margin-top: 20px
     //     width: 280px
@@ -191,17 +193,17 @@
     //     margin-left: auto
     // &--tryit
     //   text-align: start
-      // @media only screen and ( max-width: 768px)
+      // @media only screen and ( max-width: 767px)
   &__text
     font-weight: regular
     &--blue
       color: $grey
       text-align: center
       line-height: 30px
-      @media only screen and ( max-width: 992px)
+      @media only screen and ( max-width: 991px)
         font-size: 16px
         line-height: 25px
-      @media only screen and ( max-width: 768px)
+      @media only screen and ( max-width: 767px)
         line-height: 20px
         font-size: 12px
     &--warning
@@ -212,7 +214,7 @@
       line-height: 30px
       width: 80%
       margin-bottom: 15px
-      @media only screen and ( max-width: 992px)
+      @media only screen and ( max-width: 991px)
         font-size: 18px
         width: 100%
     &--small
@@ -220,10 +222,13 @@
       @media only screen and ( max-width: 720px)
         font-size: 12px 
     &--howdeliver
-      @media only screen and ( max-width: 1280px)
+      @media only screen and ( max-width: 1279px)
         font-size: 14px
         line-height: 26px
         margin-bottom: 0
+    &--delivery
+      @media only screen and ( max-width: 1279px)
+        text-align: center
   &__yellow
     background-color: $yellow
     color: $grey
@@ -259,10 +264,11 @@
     &--tryit
       width: 187px
       height: 50px
-    @media only screen and ( max-width: 480px)
-      margin-bottom: 15px
-      width: 90%
+    @media only screen and ( max-width: 767px)
       height: 35px
+    @media only screen and ( max-width: 479px)
+      margin-bottom: 15px
+      width: 100%
   &__button
     background-color: $white
     transition: all .3s ease
@@ -279,7 +285,7 @@
       background-color: $turquoise
       &:hover, &:focus, &:active
         background-color: darken($turquoise, 7%)
-      @media only screen and ( max-width: 480px)
+      @media only screen and ( max-width: 479px)
         height: 48px
     &--howdeliver
       height: 48px
@@ -291,28 +297,20 @@
       &:hover
         background-color: lighten($turquoise, 3%)
     &--delivery
-      @media only screen and ( max-width: 480px)
+      font-weight: 600
+      @media only screen and ( max-width: 767px)
         height: 35px 
         margin-bottom: 20px
+      @media only screen and ( max-width: 479px)
+        width: 100%
         margin-left: 0
   &__shops
     display: flex
-    justify-content: center
-    width: auto
-    flex-wrap: wrap
-    // @media only screen and ( max-width: 480px)
-    //   width: 100%
-    //   flex-wrap: wrap
+    width: 100%
+    @media only screen and ( max-width: 479px)
+      flex-wrap: wrap
   &__coll
-    margin-right: 70px
-    height: auto
-    max-width: 1000pxpx
-    margin-bottom: 50px
     overflow: hidden
-    // @media only screen and ( max-width: 992px)
-    //   margin-left: 20px !important
-    //   margin-right: 20px !important
-      // width: 100% !important
     &--tryit
       max-width: 767px
       width: auto
@@ -321,7 +319,7 @@
     &--howdeliver
       max-width: 816px
       width: auto 
-      @media only screen and ( max-width: 992px)
+      @media only screen and ( max-width: 991px)
         margin-right: 0 
         margin-left: 0
     &--wrap
@@ -331,32 +329,42 @@
       transition: height .5s ease
       padding: 0
     &--delivery
-      @media only screen and ( max-width: 992px)
-        margin: 0
-        margin-bottom: 10px
-      // @media only screen and ( max-width: 480px)
+      display: inline-block
+      width: 60%
+      margin-right: 0
+      margin-left: auto
+      padding-bottom: 70px
+      @media only screen and ( max-width: 1279px)
+        width: 100%
+        margin-left: auto
+        margin-right: auto
+      @media only screen and ( max-width: 991px)
+        padding-bottom: 10px
+      //   margin: 0
+      //   margin-bottom: 10px
+      // @media only screen and ( max-width: 479px)
   &__list
     padding-left: 0
     list-style-position: inside
   &__nowrap
     white-space: nowrap
-    @media only screen and ( max-width: 992px)
+    @media only screen and ( max-width: 991px)
       white-space: pre-wrap
 .collapse
   height: 1600px
   max-height: auto
   transition: height .5s ease
-  @media only screen and ( max-width: 1440px)
+  @media only screen and ( max-width: 1439px)
     height: 1450px
-  @media only screen and ( max-width: 1280px)
+  @media only screen and ( max-width: 1279px)
     height: 1550px
-  // @media only screen and ( max-width: 992px)
+  // @media only screen and ( max-width: 991px)
   //   height: 2000px
   // @media only screen and ( max-width: 814px)
   //   height: 1700px
-  // @media only screen and ( max-width: 768px)
+  // @media only screen and ( max-width: 767px)
   //   height: 1400px
-  // @media only screen and ( max-width: 480px)
+  // @media only screen and ( max-width: 479px)
   //   height: auto
 
 // goods END  
