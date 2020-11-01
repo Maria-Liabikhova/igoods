@@ -29,16 +29,6 @@
     background-color: $light-blue
     @media only screen and ( max-width: 1279px)
       flex-direction: column
-  &--footer
-    align-items: space-between
-    justify-content: space-between
-    flex-wrap: nowrap
-    margin-bottom: 60px
-    margin-top: 50px
-    @media only screen and ( max-width: 991px)
-      height: 250px
-      width: 100%
-      flex-direction: column-reverse
   &--blue
     flex-direction: column
     background-color: lighten($turquoise, 10%)
@@ -70,5 +60,14 @@
     background-size: 30%
     @media only screen and ( max-width: 1279px )
       background: none !important
-
+  &--footer
+    align-items: space-between
+    justify-content: space-between
+    flex-wrap: nowrap
+    margin-bottom: 20px
+    margin-top: 10px
+    @media only screen and ( max-width: 991px)
+      margin: 0
+      width: 100%
+      flex-direction: column-reverse
 // wrapper END
