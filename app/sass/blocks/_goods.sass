@@ -297,6 +297,7 @@
         height: 48px
         width: 100%
     &--howdeliver
+      // overflow: hidden
       height: 48px
       width: 100% 
       background-color: $white
@@ -319,18 +320,17 @@
     @media only screen and ( max-width: 767px)
       flex-wrap: wrap
   &__coll
-    overflow: hidden
     &--tryit
       width: auto
       margin: 40px auto 40px 0px
       @media only screen and ( max-width: 767px)
         margin: 0
     &--wrap
-      height: 393px
-      width: 100%
       overflow: hidden
+      max-height: 393px
+      width: 100%
       margin-bottom: 30px
-      transition: height .5s ease
+      transition: all .5s ease
       padding: 0
       @media only screen and ( max-width: 767px)
         margin-bottom: 20px
@@ -357,12 +357,7 @@
     @media only screen and ( max-width: 991px)
       white-space: pre-wrap
 .collapse
-  transition: height .5s ease
-  height: 1900px
-  @media only screen and ( max-width: 1279px)
-    height: 1050px
-  @media only screen and ( max-width: 767px)
-    height: 1360px
-  @media only screen and ( max-width: 479px)
-    height: 2100px
+  transition: all .5s ease
+  max-height: 2500px
+  overflow: hidden
 // goods END  
