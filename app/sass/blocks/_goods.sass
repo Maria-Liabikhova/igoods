@@ -25,6 +25,7 @@
   &__input:placeholder
     color: lighten($grey, 60%)
   &__img
+    // &--shops
     height: 64px
     width: 64px
     margin-bottom: 10px
@@ -32,19 +33,24 @@
       height: 54px
       width: 54px
       margin-bottom: 5px
-    &--background
-      height: 400px
-      width: auto
-      margin-left: 70px
-    &--tryit
-      height: 370px
-      margin-bottom: 0
-      margin-top: auto
-      @media only screen and ( max-width: 1279px)
-        height: 300px
-    &--delivery, &--tryit
-      @media only screen and ( max-width: 991px)
-        display: none
+    &--shops
+      @media only screen and ( max-width: 720px)
+        height: auto
+        width: 100%
+
+    // &--background
+    //   height: 400px
+    //   width: auto
+    //   margin-left: 70px
+    // &--tryit
+    //   height: 370px
+    //   margin-bottom: 0
+    //   margin-top: auto
+    //   @media only screen and ( max-width: 1279px)
+    //     height: 300px
+    // &--delivery
+    //   @media only screen and ( max-width: 991px)
+    //     display: none
     &--shops
       height: auto
       width: 90px
@@ -85,8 +91,8 @@
         width: auto
         // margin-bottom: 65px
     &--shops
-      width: calc( 100% / 7 + 20px)
-      @media only screen and ( max-width: 479px )
+      flex-grow: 1
+      @media only screen and ( max-width: 767px )
         flex-wrap: wrap
         margin-right: 5px
   &__item
@@ -209,14 +215,19 @@
     &--warning
       display: none
       color: $crimson
+    &--delivery
+      @media only screen and ( max-width: 1279px)
+        text-align: center
     &--tryit
       font-size: 18px
-      line-height: 30px
-      width: 80%
+      line-height: 34px
+      width: 55%
       margin-bottom: 15px
-      @media only screen and ( max-width: 991px)
-        font-size: 18px
+      @media only screen and ( max-width: 1279px)
         width: 100%
+      @media only screen and ( max-width: 991px)
+        font-size: 16px
+        line-height: 28px
     &--small
       font-size: 16px
       @media only screen and ( max-width: 720px)
@@ -226,9 +237,6 @@
         font-size: 14px
         line-height: 26px
         margin-bottom: 0
-    &--delivery
-      @media only screen and ( max-width: 1279px)
-        text-align: center
   &__yellow
     background-color: $yellow
     color: $grey
@@ -287,6 +295,7 @@
         background-color: darken($turquoise, 7%)
       @media only screen and ( max-width: 479px)
         height: 48px
+        width: 100%
     &--howdeliver
       height: 48px
       width: 100%
@@ -307,15 +316,17 @@
   &__shops
     display: flex
     width: 100%
-    @media only screen and ( max-width: 479px)
+    @media only screen and ( max-width: 767px)
       flex-wrap: wrap
   &__coll
     overflow: hidden
     &--tryit
-      max-width: 767px
+      // max-width: 767px
       width: auto
-      height: auto
-      margin: 90px 0px 90px 80px
+      // height: auto
+      margin: 40px auto 40px 0px
+      @media only screen and ( max-width: 767px)
+        margin: 0
     &--howdeliver
       max-width: 816px
       width: auto 
