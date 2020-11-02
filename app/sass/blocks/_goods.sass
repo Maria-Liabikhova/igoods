@@ -65,14 +65,17 @@
     &:hover, &:active, &:focus
       color: $white
       text-decoration: none
-    // @media only screen and ( max-width: 991px )
-    //   width: calc(100% / 5 - 10px)
-    // @media only screen and ( max-width: 767px )
-    //   width: calc(100% / 4 - 10px)
-    // @media only screen and ( max-width: 479px )
-    //   width: calc(100% / 2  - 10px)
     &--card
+      width: calc(100% / 5 - 10px)
       margin-right: 10px
+      margin-bottom: 20px
+      @media only screen and ( max-width: 991px )
+        margin-bottom: 10px
+        width: calc(100% / 5 - 10px)
+      @media only screen and ( max-width: 767px )
+        width: calc(100% / 3 - 10px)
+      @media only screen and ( max-width: 479px )
+        width: calc(100% / 2  - 10px)
     &--button
       white-space: nowrap
       width: 375px
@@ -89,7 +92,6 @@
         padding-right: 10px
         padding-left: 10px
         width: auto
-        // margin-bottom: 65px
     &--shops
       flex-grow: 1
       @media only screen and ( max-width: 767px )
@@ -137,13 +139,9 @@
     //     margin-right: 20px
   &__row
     display: flex
-    max-width: 1279px
-    margin-bottom: 35px
-    height: auto
+    margin-bottom: 25px
     flex-wrap: wrap
-    margin-left: auto
-    margin-right: auto
-    justify-content: center
+    justify-content: space-around
     @media only screen and ( max-width: 767px)
       margin-left: 40px
       margin-right: 40px
@@ -153,20 +151,20 @@
   &__heading
     color: $white
     font-size: 40px
-    line-height: 50px
+    line-height: 70px
     margin-bottom: 30px
     text-align: center
     font-style: normal
     font-weight: 600
     text-align: center
     @media only screen and ( max-width: 767px)
-      font-size: 30px
-    @media only screen and ( max-width: 479px)
       font-size: 22px
       line-height: 35px !important
+    @media only screen and ( max-width: 479px)
+      // font-size: 22px
       line-height: 45px
       margin-bottom: 20px
-      margin-top: 25px
+      margin-top: 0
     // &--small
     //   font-size: 40px
     //   color: $grey
