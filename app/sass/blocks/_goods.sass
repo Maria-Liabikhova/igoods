@@ -103,19 +103,16 @@
     justify-content: center
     flex-direction: column
     &--blue
-      width: calc(100% / 3 - 100px)
+      overflow: hidden
+      width: calc(100% / 3) 
       align-self: start
-      margin-left: 40px
-      margin-right: 40px
       @media only screen and ( max-width: 991px )
-        width: calc(100% / 2 - 140px)
-        margin-left: 70px
-        margin-right: 70px
+        width: calc(100% / 2)  !important
+        margin: 0 70px
       @media only screen and ( max-width: 767px )
-        width: 100%
-      @media only screen and ( max-width: 420px )
-        margin-left: 0
-        margin-right: 0
+        width: 100% !important
+      @media only screen and ( max-width: 479px )
+        margin: 0
   &__wrap
     width: auto
     max-width: 1280px
@@ -142,12 +139,6 @@
     margin-bottom: 25px
     flex-wrap: wrap
     justify-content: space-around
-    @media only screen and ( max-width: 767px)
-      margin-left: 40px
-      margin-right: 40px
-    @media only screen and ( max-width: 479px)
-      margin-left: 10px
-      margin-right: 10px
   &__heading
     color: $white
     font-size: 40px
@@ -183,7 +174,7 @@
     white-space: nowrap
     text-align: center
     margin-top: 0
-    width: auto
+    // width: auto
     margin-bottom: 8px
     @media only screen and ( max-width: 767px)
       font-size: 16px
