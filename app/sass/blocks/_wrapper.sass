@@ -14,17 +14,34 @@
     padding: 30px
   @media only screen and ( max-width: 991px )
     width: 100%
+  &--header
+    padding-top: 10px
+    padding-bottom: 10px
+    justify-content: space-between
+  &--profits
+    margin-top: 75px
+    padding-top: 0
+  &--shops
+    justify-content: center
+    padding-top: 10px
+    align-items: center
+    flex-wrap: wrap
+    line-height: 100px
+    @media only screen and ( max-width: 479px )
+      padding-top: 0
   &--violet
     margin-bottom: 100px
     flex-direction: column
     background-color: $violet
     @media only screen and ( max-width: 991px)
-  
-      margin: 60px 17px 80px 17px
+      // margin: 60px 17px 80px 17px
+      margin: 60px 0 80px 0
     @media only screen and ( max-width: 720px)
-      margin: 30px 17px 40px 17px
+      // margin: 30px 17px 40px 17px
+      margin: 30px 0 40px 0
     @media only screen and ( max-width: 479px)
-      margin: 0 17px 30px 17px
+      // margin: 0 17px 30px 17px
+      margin: 0 0 30px 0
   &--howdeliver
     background-color: $light-blue
     @media only screen and ( max-width: 1279px)
@@ -32,20 +49,22 @@
   &--blue
     flex-direction: column
     background-color: lighten($turquoise, 10%)
-    @media only screen and ( max-width: 1279px)
-      margin-right: 20px
-      margin-left: 20px
+    // @media only screen and ( max-width: 1279px)
+    //   margin-right: 20px
+    //   margin-left: 20px
     @media only screen and ( max-width: 767px)
       margin-top: 50px
       margin-bottom: 40px
     @media only screen and ( max-width: 479px)
-      margin: 30px
+      // margin: 30px
+      margin-top: 30px
+      margin-bottom: 30px
   &--popnow
     flex-direction: column
-    padding-left: 25px
+    // padding-left: 25px
     padding-right: 25px
     @media only screen and ( max-width: 1279px )
-      padding-left: 0
+      // padding-left: 0
       padding-right: 0
   &--delivery
     background-repeat: no-repeat
@@ -68,6 +87,5 @@
     margin-top: 10px
     @media only screen and ( max-width: 991px)
       margin: 0
-      width: 100%
       flex-direction: column-reverse
 // wrapper END

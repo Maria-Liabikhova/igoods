@@ -1,7 +1,5 @@
 // owl-nav
 .owl-nav
-  @media only screen and ( max-width: 1279px)
-    display: none
   .owl-prev, .owl-next
     span
       font-size: 30px
@@ -13,17 +11,13 @@
       position: absolute
       line-height: 40px
       transform: translateX(-50%)
-      top: 50%
+      top: calc( 50% - 25px )
       left: 0
       transition: all .3s ease
       &:hover
         background-color: $turquoise
-      @media only screen and ( max-width: 1279px)
-        display: none
   .owl-next
     span
       left: 100%
       border: none
-      @media only screen and ( max-width: 1279px)
-        display: none
 // owl-nav END

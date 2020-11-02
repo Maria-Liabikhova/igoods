@@ -1,18 +1,5 @@
 // shops
 .shops
-  display: flex
-  justify-content: center
-  height: 106px
-  width: auto
-  max-width: 1440px
-  align-items: center
-  flex-wrap: wrap
-  line-height: 100px
-  margin-left: 80px
-  margin-right: 80px
-  @media only screen and ( max-width: 767px)
-    margin-left: 40px
-    margin-right: 40px
   &__links
     border-right: 1px solid lighten($grey, 65% )
     flex-grow: 1
@@ -25,6 +12,8 @@
     &__img
     height: 55px
     align-self: center
+    margin: 15px
     @media only screen and ( max-width: 767px)
+      margin: 5px
       height: 25px
 // shopsEND
