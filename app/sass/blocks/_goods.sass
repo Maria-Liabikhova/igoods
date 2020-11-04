@@ -26,22 +26,24 @@
     color: lighten($grey, 60%)
   &__img
     height: 64px
-    width: 64px
     margin-bottom: 10px
-    @media only screen and ( max-width: 720px)
+    @media only screen and ( max-width: 767px)
       height: 54px
-      width: 54px
       margin-bottom: 5px
-    &--shops
-      @media only screen and ( max-width: 720px)
-        height: auto
-        width: 100%
-    &--shops
-      height: auto
-      width: 90px
-      margin-bottom: 0
+    &--violet
+      transition: all .3s ease
+      &:hover
+        height: 70px
+        margin-bottom: 4px
+        transition: all .3s ease
       @media only screen and ( max-width: 767px)
-        width: 60px
+        &:hover
+          height: 57px
+          margin-bottom: 2px
+    &--shops
+      height: 25px
+      @media only screen and ( max-width: 767px)
+        height: 20px
   &__link
     color: $white
     font-weight: semibold
@@ -105,12 +107,12 @@
     overflow: hidden
     &--forinput
       flex-direction: row
-      @media only screen and ( max-width: 479px)
+      @media only screen and ( max-width: 767px)
         flex-direction: column
-        height: auto !important
+        // height: auto !important
     &--warning
       height: 84px
-      @media only screen and ( max-width: 479px)
+      @media only screen and ( max-width: 767px)
         height: auto
   &__row
     display: flex
@@ -220,8 +222,6 @@
       width: 187px
       height: 50px
     @media only screen and ( max-width: 767px)
-      height: 35px
-    @media only screen and ( max-width: 479px)
       margin-bottom: 15px
       width: 100%
   &__button
@@ -236,13 +236,15 @@
     &:hover, &:focus, &:active
       background-color: lighten($turquoise, 10%)
       outline: none
-    &--tryit
+    &--tryit, &--delivery
+      font-weight: 600
       background-color: $turquoise
       &:hover, &:focus, &:active
         background-color: darken($turquoise, 7%)
-      @media only screen and ( max-width: 479px)
+      @media only screen and ( max-width: 767px)
         height: 48px
         width: 100%
+        margin-left: 0
     &--howdeliver
       height: 48px
       width: 100% 
@@ -253,13 +255,9 @@
       &:hover
         background-color: lighten($turquoise, 3%)
     &--delivery
-      font-weight: 600
+      background-color: $white
       @media only screen and ( max-width: 767px)
-        height: 35px 
-        margin-bottom: 20px
-      @media only screen and ( max-width: 479px)
-        width: 100%
-        margin-left: 0
+        margin-bottom: 10px
   &__shops
     display: flex
     width: 100%
