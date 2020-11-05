@@ -1,0 +1,42 @@
+// h-menu
+.h-menu
+  position: absolute
+  z-index: 1000
+  background-color: rgba(0, 0, 0, .5)
+  width: 100%
+  transition: all 1s ease
+  transform: translateX(100%)
+  &__wrap
+    display: flex
+    background-color: $white
+    margin-right: 0
+    margin-left: auto
+    top: 0
+    width: 300px
+    height: 550px
+    transition: all 1s ease
+    transform: translateX(100%)
+  &__button
+    &--close
+      height: 2px
+      width: 15px
+      border: 50%
+      background-color: lighten($grey, 10%)
+      border: none
+      outline: none
+      transform: rotate(45deg)
+      transition: all 1s ease
+       border: 10px solid rgba(255, 255, 255, 1)
+      &:after
+        content: ""
+        background-color: lighten($grey, 10%)
+        position: absolute
+        height: 2px
+        width: 15px
+        transform: translate(-50%, -1px) rotate(90deg)
+    &:active, &:focus
+      outline: none
+.active
+  transform: translateX(0)
+  transition: all 1s ease
+// h-menu END

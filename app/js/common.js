@@ -41,5 +41,14 @@ $(function() {
     }
     else this.innerHTML = "Узнать больше";
   });
+
+  $(".hamburger").click(function() {
+    $(".h-menu").addClass('active');
+    $(".h-menu__wrap").addClass('active')
+  });
+  $(".h-menu__button--close").click(function() {
+    $(".h-menu").removeClass('active');
+    $(".h-menu__wrap").removeClass('active')
+  });
   
 });
